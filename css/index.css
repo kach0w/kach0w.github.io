@@ -5,6 +5,9 @@
 body, h5 {
   font-family: JetBrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;  /* font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; */
 }
+html {
+  height: 100%;
+}
 body {
   background-color: rgba(15,23,42); 
   margin: 0;
@@ -12,6 +15,7 @@ body {
   overflow-x: hidden;
   color: white;
   text-align: center;
+  height: 100%;
 }
 header {
   position: sticky;
@@ -143,6 +147,7 @@ animation-delay: 10s; */
 
 .intro {
   height: 100vh;
+  width: 100vw;
 }
 
 .intro-about-me {
@@ -165,32 +170,34 @@ animation-delay: 10s; */
 }
 
 .projects {
+  width: 100vw;
   height: 100vh;
+  /* margin-top: 25vh; */
 }
 
 .projects-grid {
   display: grid;
-  width: 60vw;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 70vw;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
   grid-gap: 20px;
-  padding-inline-start: 0;
+  /* padding-inline-start: 0; */
   margin-left: auto;
   margin-right: auto;
 }
 
 .project-card {
-  width: 15vw;
+  width: 20vw;
   /* height: 5vh; */
   background-color: white;
   border-radius: .5rem;
   color: black;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 .project-card a {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-family: JetBrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;  /* font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; */
-
+  padding-top: 30px;
   /* font-family: Inter, sans-serif */
 }
 
@@ -214,6 +221,7 @@ animation-delay: 10s; */
       transform: translateY(0);
   }
 }
+
 
 #language {
   padding-bottom: 5px;
@@ -266,7 +274,7 @@ animation-delay: 10s; */
   padding: 30px;  
   text-align: center;
   font-size: 32px;
-  width: 50%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
   color: black !important;
@@ -276,7 +284,7 @@ animation-delay: 10s; */
 .blogpost p {
   color: white;
   font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
-  font-size : 20px;
+  font-size: .80rem;
 }
 .blogpost h2 {
   color: white;
@@ -293,45 +301,48 @@ animation-delay: 10s; */
 }
 
 /* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
+footer {
+  height: 16vh;
+  position: static;
+  /* display:block; */
+  background-color: white;
+  /* position: absolute; */
+  bottom: 0;
+  /* width: 100%; */
+  margin-top: 45vh;
+  /* height: 2.5rem; */
 }
 
-.footer-home-page {
-  height: 100px;
+.footer-content {
+  padding: 3vh;
+  display: inline-block;
+  font-size: 1.5rem !important;
   position: relative;
-  background-color: white;
+  /* text-align: center; */
 }
 
 .location {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  float: left;
-  padding-left: 20px;
-  font-size: 20px;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  display: inline-block;
+  padding-right: 40vw;
+  /* font-size: 20px; */
+  /* -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
 }    
 
 .contact {
-  display: inline;
-  margin-left: 70vw;
-  position: relative;
-  top: 40%;
-  /* padding-right: 30px; */
-  font-size: 10px;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  display: inline-block;
+  /* padding-right: 1vw; */
+  /* font-size: 10px; */
+  /* -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
 }    
 
 .contact a{
-  font-size: 25px !important;
+  /* font-size: 1rem !important; */
   color: black;
   margin-right: 5px;
+  font-size: 1.5rem !important;
+
 }
 
 .contact a:hover {
