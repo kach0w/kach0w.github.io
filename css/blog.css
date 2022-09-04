@@ -169,6 +169,12 @@ a:active { text-decoration: none; }
   line-height: 40px;
 }
 
+#blog-snippet a{
+    font-size: 32px;
+    color: #3b82f6;
+    text-decoration: underline;
+}
+
 #read-more{
   color: #3b82f6;
   font-size: 35px;
