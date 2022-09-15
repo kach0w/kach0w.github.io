@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+╭╮╱╱╱╱╱╱╭╮╭╮╱╱╭╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭╮
+┃┃╱╱╱╱╱╭╯╰┫┃╱╱┃┃╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃┃
+┃┃╭┳━━┳┻╮╭┫╰━┳┫┃╭╮╭┳━━╮╭━━┳━━┳━━┫┃
+┃╰╯┫╭╮┃╭┫┃┃╭╮┣┫╰╯╯┣┫━━┫┃╭━┫╭╮┃╭╮┃┃
+┃╭╮┫╭╮┃┃┃╰┫┃┃┃┃╭╮╮┃┣━━┃┃╰━┫╰╯┃╰╯┃╰╮
+╰╯╰┻╯╰┻╯╰━┻╯╰┻┻╯╰╯╰┻━━╯╰━━┻━━┻━━┻━╯
+-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a191de05ec.js" crossorigin="anonymous"></script>
     <link rel="icon" href="/Gallery/rusteze.png" type="image/png" > 
-   
+    <meta name="description" content="Trying to learn new things.">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript">
     $.fn.isInViewport = function() {
@@ -42,6 +50,27 @@
         } 
         
     });
+    var scroll_pos = 0;
+    var scroll_time;
+
+    $(window).scroll(function() {
+        clearTimeout(scroll_time);
+        var current_scroll = $(window).scrollTop();
+        
+        if (current_scroll >= $('.links').outerHeight()) {
+            if (current_scroll <= scroll_pos) {
+                $('.links').removeClass('hidden');   
+            }
+            else {
+                $('.links').addClass('hidden'); 
+            }
+        }
+            
+        scroll_time = setTimeout(function() {
+            scroll_pos = $(window).scrollTop();
+        }, 100);
+    });
+    
 </script>  
 </head>    
 <body>
@@ -73,13 +102,12 @@
     <div class="main">
         <div class="intro">
             <div class="subtitle">
-                <p style="font-size: 30px; color:white">Hello, I'm</p>
-                <h1>Karthik.</h1> 
+                <p style="font-size: 30px;">Hello, I'm</p>
+                <h1>kach0w.</h1> 
+                <img src="/Gallery/Homepage/rusteze.png" width="509" height="413">
             </div>
             <div class="intro-about-me">
-                I am deeply interested in programming, especially in the field of web development
-                and languages like: Java, C++, Python, HTML, CSS, and Javascript. As I am learning these languages, I make
-                projects and try to implement different ideas I have. Here is a glimpse into some of things I do: 
+                Trying to Learn New Things.
             </div>
         </div>
         <div class="about-me" id="about">
@@ -87,19 +115,27 @@
                 <h1>About Me.</h1> 
             </div>
             <div class="intro-about-me">
-                I am 14 years old and am going to Basis Independent Silicon Valley. gonna add stuff here later
+                I am a high-schooler in Fremont, CA.
+                <br>
+                <br>
+                <img src="/Gallery/Homepage/fremont.jpg" width="791" height="479">
             </div>
         </div>
         <div class="projects" id="projects">
             <div class="subtitle">
                 <h1>Projects.</h1> 
-                <p style="font-size: 30px; color:white">I am always trying out new things.</p>
+                <p style="font-size: 30px;">I am always trying out new things.</p>
             </div>
             <div class="projects-grid">
                 <div class="project-card">
                     <a href="https://pokedex.kachow.me">Pokédex</a>
                     <p id="project-subtitle">Search and view different pokemon with the PokeAPI </p>
                     <p id="language">React · JS · HTML</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://kach0w-statistics.herokuapp.com/">Statistics - Chart JS</a>
+                    <p id="project-subtitle">Used the JS library Chart JS to display statistics</p>
+                    <p id="language">React · ChartJS</p>
                 </div>
                 <div class="project-card">
                     <a href="/Calculator/calculator">Apple Calculator</a>
@@ -130,15 +166,16 @@
         </div>
         <div class="blog-homepage">
             <h1 id="blog-title" class="blog-title">Blog.</h1>
-            <div class="home-blog">
-                <h2>Pokédex</h2>
-                <h5>June 21, 2022</h5>
+            <div class="home-blog bouncey">
+                <h2>Statistics</h2>
+                <h5>September 4th, 2022</h5>
                 <p id="blog-snippet">    
-                    As I have been gaining experience with calling APIs in React apps, I wanted to make one of my first ideas when it came to apis, a Pokédex. 
-                    I looked and found many different APIs on sites like RapidAPI but eventually found one called PokéAPI. It has very extensive documentation
-                    and data about each pokémon along with pictures which many other ones lack... 
+                    Sorry, I haven't posted here in a while. I was still working on more github projects over the summer but I forgot to 
+                    update what I've done here. Anyways, school started and in my stats class because we were only going to start using 
+                    calculators next week I wanted to make something to graph and display data from points that a user inputs...
+                    
                 </p>
-                <a href="https://kachow.me/Blog/pokedex.html" id="read-more">Read More</a>
+                <a href="https://kachow.me/Blog/stats.html" id="read-more">Read More</a>
             </div>
             <a href="https://kachow.me/blog" id="blogs-button">More Blog Posts</a>
     </div>
@@ -162,9 +199,9 @@
             <div class="contact">
                 <a href="https://mailchi.mp/3c8f3a58e0a5/newsletter"><i class="fa-solid fa-newspaper"></i> Newsletter · </a>
                 <a href="https://github.com/kach0w"><i class="fab fa-github"></i> GitHub · </a>
-                <a href="mailto:karsab343@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="mailto:kachow@duck.com"><i class="fa-solid fa-envelope"></i> Email</a>
             </div>
         </div> 
     </footer>
 </body>
-</html>
+</html> 
