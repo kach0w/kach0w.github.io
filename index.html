@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
+<<<<<<< HEAD
+=======
+
+>>>>>>> ded241252d14fcbcefb4da256b255fa27b67a62f
 ╭╮╱╱╱╱╱╱╭╮╭╮╱╱╭╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭╮
 ┃┃╱╱╱╱╱╭╯╰┫┃╱╱┃┃╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃┃
 ┃┃╭┳━━┳┻╮╭┫╰━┳┫┃╭╮╭┳━━╮╭━━┳━━┳━━┫┃
 ┃╰╯┫╭╮┃╭┫┃┃╭╮┣┫╰╯╯┣┫━━┫┃╭━┫╭╮┃╭╮┃┃
 ┃╭╮┫╭╮┃┃┃╰┫┃┃┃┃╭╮╮┃┣━━┃┃╰━┫╰╯┃╰╯┃╰╮
 ╰╯╰┻╯╰┻╯╰━┻╯╰┻┻╯╰╯╰┻━━╯╰━━┻━━┻━━┻━╯
+<<<<<<< HEAD
+=======
+
+>>>>>>> ded241252d14fcbcefb4da256b255fa27b67a62f
 -->
 <head>
     <meta charset="UTF-8">
@@ -50,25 +58,24 @@
         } 
         
     });
-    var scroll_pos = 0;
-    var scroll_time;
+    var lastScrollTop = 0;
 
     $(window).scroll(function() {
-        clearTimeout(scroll_time);
-        var current_scroll = $(window).scrollTop();
-        
-        if (current_scroll >= $('.links').outerHeight()) {
-            if (current_scroll <= scroll_pos) {
-                $('.links').removeClass('hidden');   
-            }
-            else {
-                $('.links').addClass('hidden'); 
-            }
+
+        var st = $(this).scrollTop();
+
+        if (st > lastScrollTop){
+
+            $('header').addClass('hide-header');
+
+        } else {
+
+            $('header').removeClass('hide-header');
+
         }
-            
-        scroll_time = setTimeout(function() {
-            scroll_pos = $(window).scrollTop();
-        }, 100);
+
+        lastScrollTop = st;
+
     });
     
 </script>  
