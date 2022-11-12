@@ -59,7 +59,7 @@ h3 {
 }
 a {
   color: black;
-  font-size: 140%;
+  font-size: 1.5rem;
   font-weight: 10;
 }  
 
@@ -163,6 +163,7 @@ animation-delay: 10s; */
   text-align: center;
   vertical-align: middle;
   display: table-cell;
+
 }
 .intro-contact-card:hover {
   background-color: #2a6cd6;
