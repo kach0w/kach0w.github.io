@@ -36,7 +36,7 @@ h1 {
   font-size: 100px;
   /* font-weight: 100; */
   font-weight: 700;
-  line-height: 20%;
+  line-height: 0%;
   /* font-family: 'Inter', sans-serif;  */
   font-family: proxima-nova, sans-serif;
 }
@@ -46,10 +46,12 @@ p {
   line-height: 100%;
 }
 h2 {
-  color: rgb(0, 0, 0);
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  color: #15171a;
+
   text-align: center;
   line-height: 40%;
-  font-weight: 10;
 }
 h3 {
   /* color: rgb(230, 230, 230); */
@@ -220,7 +222,7 @@ animation-delay: 10s; */
 
 .project-card {
   width: 20vw;
-  height: 26vh;
+  /* height: 26vh; */
   /* background-color: rgb(222, 230, 238); */
   background-color: rgb(255, 255, 255);
   box-shadow: 1px 1px 1px 2px rgb(221, 221, 221);
@@ -269,14 +271,16 @@ animation-delay: 10s; */
 
 
 #language {
-  padding-bottom: 5px;
+  padding-bottom: 25px;
   color: #3b82f6;
-  font-size: 1.5rem;
+  font-size: .9em;
+  padding-top: 5px;
 }
 
 #project-subtitle {
   font-family: proxima-nova, sans-serif;
   font-weight: 700;
+  padding-top: 1%;
 }
 
 .blog-homepage {
