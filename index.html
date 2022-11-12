@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-<<<<<<< HEAD
-=======
-
->>>>>>> ded241252d14fcbcefb4da256b255fa27b67a62f
 ╭╮╱╱╱╱╱╱╭╮╭╮╱╱╭╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭╮
 ┃┃╱╱╱╱╱╭╯╰┫┃╱╱┃┃╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃┃
 ┃┃╭┳━━┳┻╮╭┫╰━┳┫┃╭╮╭┳━━╮╭━━┳━━┳━━┫┃
 ┃╰╯┫╭╮┃╭┫┃┃╭╮┣┫╰╯╯┣┫━━┫┃╭━┫╭╮┃╭╮┃┃
 ┃╭╮┫╭╮┃┃┃╰┫┃┃┃┃╭╮╮┃┣━━┃┃╰━┫╰╯┃╰╯┃╰╮
 ╰╯╰┻╯╰┻╯╰━┻╯╰┻┻╯╰╯╰┻━━╯╰━━┻━━┻━━┻━╯
-<<<<<<< HEAD
-=======
-
->>>>>>> ded241252d14fcbcefb4da256b255fa27b67a62f
 -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
-    <!-- <link rel="stylesheet" href="/Blog/blog.css"> --> 
-    <title>Kachow</title>
+    <link href="https://use.typekit.net/emv3zbo.css" rel="stylesheet" crossorigin="anonymous">    <title>Kachow</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a191de05ec.js" crossorigin="anonymous"></script>
@@ -58,25 +49,30 @@
         } 
         
     });
-    var lastScrollTop = 0;
-
-    $(window).scroll(function() {
-
-        var st = $(this).scrollTop();
-
-        if (st > lastScrollTop){
-
-            $('header').addClass('hide-header');
-
-        } else {
-
-            $('header').removeClass('hide-header');
-
-        }
-
-        lastScrollTop = st;
-
-    });
+    $(document).ready(function () {
+  
+        'use strict';
+        
+         var c, currentScrollTop = 0,
+             header = $('header');
+      
+         $(window).scroll(function () {
+            var a = $(window).scrollTop();
+            var b = header.height();
+           
+            currentScrollTop = a;
+           
+            if (c < currentScrollTop && a > b + b) {
+              header.addClass("scrollUp");
+            } else if (c > currentScrollTop && !(a <= b)) {
+              header.removeClass("scrollUp");
+            }
+            c = currentScrollTop;
+           
+           console.log(a);
+        });
+        
+      });
     
 </script>  
 </head>    
@@ -110,69 +106,94 @@
         <div class="intro">
             <div class="subtitle">
                 <p style="font-size: 30px;">Hello, I'm</p>
-                <h1>kach0w.</h1> 
-                <img src="/Gallery/Homepage/rusteze.png" width="509" height="413">
+                <h1 id="title">kach0w</h1>
+                <img src="/Gallery/Homepage/rusteze.png" style="max-width:30%;height:auto;">
             </div>
             <div class="intro-about-me">
                 Trying to Learn New Things.
             </div>
+            <div class="intro-contact">
+                <a href="https://github.com/kach0w">
+                    <div class="intro-contact-card">
+                        <i class="fab fa-github"></i> GitHub 
+                    </div>
+                </a>
+                <a href="mailto:kachow@duck.com">
+                    <div class="intro-contact-card">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </div>
+                </a>
+            </div>
         </div>
         <div class="about-me" id="about">
             <div class="subtitle">
-                <h1>About Me.</h1> 
+                <h1>About Me</h1> 
             </div>
             <div class="intro-about-me">
-                I am a high-schooler in Fremont, CA.
+                I'm a high-schooler in Fremont, CA.
                 <br>
                 <br>
-                <img src="/Gallery/Homepage/fremont.jpg" width="791" height="479">
+                <img src="/Gallery/Homepage/fremont.jpg" style="max-width:75%;height:auto;">
+                <figcaption>Lake Elizabeth</figcaption>
             </div>
         </div>
-        <div class="projects" id="projects">
+        <div class="projects" id="projects" style="max-width:80%;height:auto; margin-left:auto; margin-right:auto">
             <div class="subtitle">
-                <h1>Projects.</h1> 
-                <p style="font-size: 30px;">I am always trying out new things.</p>
+                <h1>Projects</h1> 
+                <p style="font-size: 30px;">I'm always making new things.</p>
             </div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <a href="https://pokedex.kachow.me">Pokédex</a>
-                    <p id="project-subtitle">Search and view different pokemon with the PokeAPI </p>
-                    <p id="language">React · JS · HTML</p>
-                </div>
-                <div class="project-card">
-                    <a href="https://kach0w-statistics.herokuapp.com/">Statistics - Chart JS</a>
-                    <p id="project-subtitle">Used the JS library Chart JS to display statistics</p>
-                    <p id="language">React · ChartJS</p>
-                </div>
-                <div class="project-card">
-                    <a href="/Calculator/calculator">Apple Calculator</a>
-                    <p id="project-subtitle">Tried to make a recreation of the Apple calculator </p>
-                    <p id="language">CSS · JS · HTML</p>
-                </div>
-                <div class="project-card">
-                    <a href="https://kachow.me/Weather/weather">Weather Forecast</a>
-                    <p id="project-subtitle">The weather at the click of a button, it uses your location and pulls data</p>
-                    <p id="language">React · JS · HTML</p>
-                </div>
-                <div class="project-card">
-                    <a href="https://scores.kachow.me">NBA Live Scores</a>
-                    <p id="project-subtitle">The first NBA related project I made from a tutorial</p>
-                    <p id="language">React · JS · HTML</p>
-                </div>
-                <div class="project-card">
-                    <a  href="https://stats.kachow.me">NBA Player Stats</a>
-                    <p id="project-subtitle">Part of NBA related stuff I made using the balldontlie api </p>
-                    <p id="language">React · JS · HTML</p>
-                </div>
-                <div class="project-card">
+                <a href="https://pokedex.kachow.me">
+                    <div class="project-card">
+                        <p>Pokédex</p>
+                        <p id="project-subtitle">Search and view different pokemon with the PokeAPI </p>
+                        <p id="language">React · JS · HTML</p>                    
+                    </div>
+                </a>
+                <a href="https://kach0w-statistics.herokuapp.com/">
+                    <div class="project-card">
+                        <p>Statistics - Chart JS</p>
+                        <p id="project-subtitle">Used the JS library Chart JS to display statistics</p>
+                        <p id="language">React · ChartJS</p>
+                    </div>
+                </a>
+                <a href="/Calculator/calculator">
+                    <div class="project-card">
+                        <p>Apple Calculator</p>
+                        <p id="project-subtitle">Tried to make a recreation of the Apple calculator </p>
+                        <p id="language">CSS · JS · HTML</p>
+                    </div>
+                </a>
+                <a href="https://kachow.me/Weather/weather">
+                    <div class="project-card">
+                        <p>Weather Forecast</p>
+                        <p id="project-subtitle">The weather at the click of a button, it uses your location and pulls data</p>
+                        <p id="language">React · JS · HTML</p>
+                    </div>
+                </a>
+                <a href="https://scores.kachow.me">
+                    <div class="project-card">
+                        <p>NBA Live Scores</p>
+                        <p id="project-subtitle">The first NBA related project I made from a tutorial</p>
+                        <p id="language">React · JS · HTML</p>
+                    </div>
+                </a>
+                <a  href="https://stats.kachow.me">
+                    <div class="project-card">
+                        <p>NBA Player Stats</p>
+                        <p id="project-subtitle">Part of NBA related stuff I made using the balldontlie api </p>
+                        <p id="language">React · JS · HTML</p>
+                    </div>
+                </a>
+                <!-- <div class="project-card">
                     <a href='https://stats.uptimerobot.com/yOqVzc7pJg'>Bot Status</a>
                     <p id="project-subtitle">A status page for my discord bot, used in a couple of my servers</p>
                     <p id="language">NodeJS</p>
-                </div>
+                </div> -->
             </div>
         </div>
-        <div class="blog-homepage">
-            <h1 id="blog-title" class="blog-title">Blog.</h1>
+        <div class="blog-homepage" style="max-width:50%;height:auto;margin-left:auto; margin-right:auto">
+            <h1 id="blog-title" class="blog-title">Blog</h1>
             <div class="home-blog bouncey">
                 <h2>Statistics</h2>
                 <h5>September 4th, 2022</h5>
