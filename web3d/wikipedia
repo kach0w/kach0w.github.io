@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <head>
+        <title>Wikipedia</title>
+        <style>
+            body, html {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                display: flex;
+            }
+
+            #options {
+                margin-left: 12px;
+                margin-top: 12px;
+                height:25px;
+                /* width:120px; */
+            }
+
+            #site {
+                margin: auto;
+                width: 50%;
+                height: 80%;
+                -webkit-animation: rotating 6s linear infinite;
+                animation-play-state: running;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+            @-webkit-keyframes rotating {
+                from {transform: rotate3d(1, 1, 1, 0deg);}
+	            to {transform: rotate3d(1, 1, 1, 360deg);}
+            }
+            
+            #reload-button {
+                margin-top: 12px;
+                height:25px;
+                width:60px;
+            }
+            
+            #stop-button {
+                margin-top: 12px;
+                height:25px;
+                width:60px;
+            }
+            
+        </style>
+    </head> 
+    <body>
+        <select id="options">
+            <option selected value="random">Random Article</option>
+            <option value="today">Main Page</option>
+        </select>    
+
+        <button id="reload-button" onclick="window.location.reload();">Reload</button>    
+        <button id="stop-button" onclick="myFunction()">Stop</button>
+        <iframe id="site"></iframe>
+        
+        
+        <script>
+            const site = document.getElementById("site"); 
+
+
+            var sel = document.getElementById("options");
+            var text= sel.options[sel.selectedIndex].text;
+            if(text === "Random Article"){
+                site.src = "https://en.wikipedia.org/wiki/Special:Random";
+            }
+            if(text === "Main Page"){
+                site.src="https://en.wikipedia.org/wiki/Main_Page";
+            }
+
+            function myFunction() {
+                const button = document.getElementById("stop-button");
+                if(button.innerText === "Play"){
+                    site.style = "animation-play-state: running";
+                    button.innerText = "Stop";
+                    return;
+                }
+                if(button.innerText === "Stop"){
+                    site.style = "animation-play-state: paused";
+                    button.innerText = "Play";
+                    return;
+                }
+            }
+
+        </script>
+    </body> 
+</html>
+
+
