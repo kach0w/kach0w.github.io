@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="pokeball.png" type="image/png" > 
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Pokédex</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://kit.fontawesome.com/a191de05ec.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="overlay">
+            <div class="overlay-inner">
+                <div class="message">
+                        <img class="img" src="pokeball.png">
+                        <h2 class="loading-title">Please wait for the images to load, it takes a while...</h2>
+
+                </div>
+            </div>
+        </div>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for pokemon..." title="Type in a name">
+
+        <div class="container">
+            <h1>Pokédex</h1>
+            <ul id="pokedex"></ul>
+        </div>  
+
+        <script src="../src/App.js"></script>
+        <script>
+            
+            function myFunction() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("pokedex");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
