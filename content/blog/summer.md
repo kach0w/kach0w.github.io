@@ -1,6 +1,7 @@
 +++
 title = "Summer Update"
 date = 2023-07-09
+description = "~blog"
 +++
 
 The time since my last blog post has been predictably too long so now I will try to give a longer than usual update.

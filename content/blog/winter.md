@@ -1,6 +1,7 @@
 +++
 title = "Winter Update or: How I Need Better Titles, Oh Wait Actually \"So Long 2023!\""
 date = 2023-12-11
+description = "~blog"
 +++
 
 Just as it was stunningly predicted in my last blog post–it’s been a while. Or to be exact 5 months and 2 days. A new record! 🎉 I haven’t really done much on the website over these last couple of months; school has hit hard. Anyway, things have been picking up recently so I’m gonna update the projects with some new stuff I’ve done.

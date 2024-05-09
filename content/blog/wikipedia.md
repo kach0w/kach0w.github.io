@@ -1,6 +1,7 @@
 +++
 title = "A Speech on Wikipedia"
 date = 2023-03-23
+description = "~blog"
 +++
 
 A speech on Wikipedia, from Academic Decathlon. It's not really related to web development, but still interesting.

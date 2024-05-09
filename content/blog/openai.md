@@ -1,6 +1,8 @@
 +++
 title = "OpenAI"
 date = 2023-01-22
+description = "~blog"
+
 +++
 
 Currently, it seems like there is always some news or controversy behind OpenAI's ChatGPT, an AI bot with extremely advanced capabilities. Released in November 2022, overnight it has become a household name. As an increasing number of people start to use it, and companies like Google declaring "code red" over the possible disruption it maybe bring to their search engine, millions view ChatGPT as the future. The possible disruption that the technology may bring is unknown, but it does hold lots of promise, and only the future knows what it may change.
