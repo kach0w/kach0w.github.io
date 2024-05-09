@@ -1,5 +1,5 @@
 +++
-title = "Summer Update: Part One"
+title = "Reflections on 11th Grade"
 date = 2024-05-09
 description = "~blog"
 +++
@@ -13,7 +13,7 @@ Admittedly, it's been summer programs now instead of college (if you treat them 
 
 1. Start Early: RSI opens up first and although you won't get in, it's good for getting your story straight.
 2. Rolling Admissions: Do those as early as you can, programs like RMP or SRA are not as hard to get into if you apply in December.
-3. Ask for help, if you don't have a counselor or something, ask you friends, ask people in your family, ask anyone who you think might have some helpful advice.
+3. Ask for help: If you don't have a counselor or something, ask you friends, ask people in your family, ask anyone who you think might have some helpful advice.
 4. Computer Science Kids: For other kids in this boat, the best approach is to "spray and pray". Honestly, if you're not a USACO camper or insanely cracked at Science Fair, your chances are pretty much the same as anyone else's. For me, I tried to distinguish myself with my specific applications of machine learning, but as you can see, it didn't really work out.
 5. Rejections: Do your best to handle them, it's hard.
 6. Make a Plan B: It's not the end of the world if you don't get in anywhere. Try emailing professors, looking for internships, or just spend the summer writing your common app and working on a passion project (that's part of what I will be doing too). 
