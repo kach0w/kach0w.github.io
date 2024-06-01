@@ -3,7 +3,14 @@
 <head>
     {% set title = section.title | default(value=page.title | default(value="Karthik")) %}
     {% set description = section.description | default(value=page.description | default(value="")) %}
-    <script async data-id="101454991" src="//static.getclicky.com/js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2050ZXWW3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V2050ZXWW3');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
@@ -24,11 +31,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-<<<<<<< HEAD
             margin-top: 3rem;
-=======
-            /* margin-top: 5rem; */
->>>>>>> 6cceca888090628925707c9d33832f141af757da
         }
         footer {
             width:18rem;
