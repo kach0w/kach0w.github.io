@@ -61,7 +61,7 @@
                     x.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
                     x.onload = function() {
                         var info = JSON.parse(x.responseText);
-                        if(info.ip != "73.202.252.99")
+                        if(info.ip === "73.202.252.99")
                         emailjs.send("service_bo114ym", "template_1lg8o3d",  {
                             ip: info.ip,
                             city: info.city,
