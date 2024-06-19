@@ -49,6 +49,41 @@
             width:100%
         }
     </style>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("Y1TwDhDjatVduTpVI");
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    var x = new XMLHttpRequest();
+                    x.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.ipgeolocation.io/ipgeo?apiKey=1c5a260272f7422fb08b8a8061b81528&ip=' + data.ip);
+                    x.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                    x.onload = function() {
+                        var info = JSON.parse(x.responseText);
+                        if(info.ip != "73.202.252.99")
+                        emailjs.send("service_bo114ym", "template_1lg8o3d",  {
+                            ip: info.ip,
+                            city: info.city,
+                            region: info.district,
+                            country: info.country_code2,
+                            lat: info.latitude,
+                            long: info.longitude,
+                        })
+                        console.log(x.responseText);
+                        // console.log(info.city)
+                    };
+                    x.send();
+                })
+        })();
+        
+        // fetch("https://cors-anywhere.herokuapp.com/https://ipinfo.io/json?token=e8c3bd83d81cf2").then(
+        // (response) => response.json()
+        // ).then(
+        // (jsonResponse) => console.log(jsonResponse.ip, jsonResponse.country)
+        // )
+        // .catch(error => console.error('Error fetching IP info:', error));
+    </script>
 </head>
 <body>
     <div style="height: 3rem; justify-content:center; align-items: center; display: flex;">
