@@ -6,6 +6,11 @@ template = "index.html"
 
 <ul>
 <li>
+    <a style="text-decoration:none;" href="https://github.com/kach0w/letterbox-to-notion"><b>letterbox-to-notion</b></a>
+    <p style="color:#374151;">Sync your Letterboxd account to a Notion database 🎥
+    <br><i>Python · Batch</i></p>
+</li>
+<li>
     <a style="text-decoration:none;" href="https://github.com/kach0w/radio-galaxy"><b>radio-galaxy</b></a>
     <p style="color:#374151;">A Science Fair Project that somehow won an award 😕
     <br><i>PyTorch · ML</i></p>
