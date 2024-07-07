@@ -1,5 +1,5 @@
 +++
-title = "LA Confidential"
+title = "LA Not So Confidential"
 date = 2024-07-07
 description = "~blog"
 +++
