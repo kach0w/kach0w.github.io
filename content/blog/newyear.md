@@ -21,7 +21,7 @@ Future me shall see soon. July 5th, the day of reckoning and probably the last t
 
 Junior year seems to be wrapping up.
 
-![Tux, the Linux mascot](/roller.webp)
+![Tux, the Linux mascot](/blog/roller.webp)
 
 “You are here” seems to have been January. Ref: Orange County Register
 
@@ -33,7 +33,7 @@ Note to future me: please go to OpenSauce and the Secret Sidewalk if you can. I 
 
 SENIOR YEAR AHHHHH.
 
-![Tux, the Linux mascot](/elmo.gif)
+![Tux, the Linux mascot](/blog/elmo.gif)
 
 I’m going insane.
 

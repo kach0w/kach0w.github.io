@@ -17,7 +17,7 @@ Did some things on GitHub:
 
 Ok, so News Classifier. That along with the Audax Labs Internship project are the main things I’ve been doing this weekend (and I guess this blog, what a momentous occasion). I have been doing all this stuff while grinding a playlist of the Smiths, my Spotify Stats are going to be crazy:
 
-<img src="/spotify.png" width="500">
+<img src="/blog/spotify.png" width="500">
 
 Credit to Stats for Spotify.
 

@@ -10,7 +10,7 @@ This summer has been unusually more productive than usual for me in terms of doi
 
 Codeforces has given me the chance to be a part of a weird, fun community of people who all love the Web 2.0 aesthetic.
 
-<img src="/cf.png" width="500">
+<img src="/blog/cf.png" width="500">
 
 yeah.
 
@@ -21,7 +21,7 @@ As for actual web development, I have been advancing my skills with backend prog
 
 Well, firebase isn’t that hard. I was able to build the app and its just fun looking at that big colorful login button on the top right corner.
 
-<img src="/rate-my-aps.png" width="500">
+<img src="/blog/rate-my-aps.png" width="500">
 
 “colorful”, its grey
 
