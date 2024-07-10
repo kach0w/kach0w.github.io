@@ -5,9 +5,10 @@
   {{ section.content | safe }}
 </div>
 <ul>
-  <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
-  {% for page in section.pages %}
-  <li><a style="text-decoration-line: none;" href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  {% for page in section.pages%}
+    {% if not page.extra["private"] %}
+      <li><a style="text-decoration-line: none;" href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+    {% endif %}
   {% endfor %}
 </ul>
 
