@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let index = 0;
 
     function updateTransform() {
-        images.style.transform = `translateX(${-index * 121.5}%)`;
+        images.style.transform = `translateX(${-index * 126.5}%)`;
     }
 
     rightArrow.addEventListener('click', function() {

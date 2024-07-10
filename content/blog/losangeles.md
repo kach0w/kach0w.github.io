@@ -18,7 +18,11 @@ The colleges I've visited have all been nice too!
 
 7/6 Caltech - Possibly better than UCLA, idk? Very similar to it but it feels much cozier I guess.
 
-7/7 UC Irvine - 
+7/7 UC Irvine - A ghost town. I guess it lives to the name of "commuter school". Besides, that a pretty nice campus, especially that central park.
+
+7/9 Cal Poly Pomona - Nice campus. It wasn't much (there were cows and stuff on its outskirts) but it was pretty good. 
+
+7/9 UC Riverside - It was like 100°F but from what I did see it wasn't all that great.
 </blockquote>
 
 Other than that I've been trying to manage ASSIP and the other stuff I talked about last time while on this trip---they've all kicked into high gear so thankfully we had the July 4th! I've also managed to work on my personal statement which is a big relief. It is looking pretty finished but who knows how it will change in upcoming months. 
@@ -29,8 +33,8 @@ This is a bit on the shorter end of my blog posts, but that's pretty much all I 
     <div class="photo-album-container">
         <div class="photo-album-arrow" id="left-arrow">&#10094;</div>
         <div class="photo-album-images">
-            <img src="/blog/la1.jpg" alt="Photo 1">
             <img src="/blog/la2.jpg" alt="Photo 1">
+            <img src="/blog/la1.jpg" alt="Photo 1">
             <img src="/blog/la3.jpg" alt="Photo 1">
             <img src="/blog/la4.jpg" alt="Photo 1">
             <img src="/blog/la5.jpg" alt="Photo 1">
