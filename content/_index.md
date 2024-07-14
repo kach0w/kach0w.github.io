@@ -3,16 +3,16 @@ title = "Karthik"
 description = ""
 +++
 
-Hey there! I'm a high school student from Fremont, CA. This website is my spot for sharing projects and occasionally posting on my blog.
+Hello there! I'm a high schooler from Fremont, CA. I use this website to share my projects and write about things.
 
-I'm interested in machine learning and history—in particular, the applications of computer vision in my projects, as well as Mesopotamian historicity and 20th-century US history. I frequently delve into these subjects on Wikipedia (I'm a bit of a fanatic).
+I'm interested in machine learning and history, especially the applications of computer vision and historicity. I frequently delve into these subjects on Wikipedia (I'm a bit of a fanatic).
 
-When I'm not at my computer, you can find me watching movies, riding my bike along the nearby Alameda Creek, or listening to some rock music. My favorite bands are R.E.M., the Beach Boys, and the Smiths 🤘.
+When I'm not at my computer, you can find me watching movies, biking along Alameda Creek, or listening to some rock music. My favorite bands are R.E.M., the Beach Boys, and the Smiths 🤘.
 
-Shoot me a message if you'd like to chat or collaborate on a project. You'll find my contact information below.
+<!-- Shoot me a message if you'd like to chat or collaborate on a project. You'll find my contact information below. -->
 
-<div style="display:flex; gap:10px">
-<table role="presentation" style="border-collapse:collapse;width:238px;margin-bottom:0;margin-top:0;background:chocolate;color:white">
+<!-- <div style="display:flex; gap:10px">
+<table role="presentation" style="border-collapse:collapse;width:238px;margin-bottom:0;margin-top:0;background:chocolate;color:white;">
   <tbody>
     <tr>
       <td style="border:0;width:45px;height:45px;background:chocolate;text-align:center;font-size:14pt;font-weight:bold;color:white;padding:0 5px 0 5px;line-height:1.25em;vertical-align:middle;">
@@ -48,7 +48,5 @@ Shoot me a message if you'd like to chat or collaborate on a project. You'll fin
     </tr>
   </tbody>
 </table>
-
-
-</div>
-<br><br>
+</div> -->
+<!-- <br><br> -->

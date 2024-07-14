@@ -18,6 +18,7 @@
             padding: 0;
             margin: auto;
             box-sizing: border-box;
+            color: #212529;
         }
         header {
             max-width: 100%;
@@ -43,11 +44,18 @@
             display: flex;
             gap: 10px;
             padding-top: 10px;
-            padding-right: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
         }
         @media (max-width: 767px) {
-            .logo {
+            /* .logo {
                 margin-bottom: 5px;
+            } */
+            h1 {
+                padding-top: 5px;
             }
         }
     </style>
@@ -84,11 +92,11 @@
 <body>  
     <header>
         <div style="display:flex;">
-            <img class="logo" src="/profile.png" alt="Profile Image">
-            <h1 style="padding-inline: 10px; text-decoration: none; ">Karthik</h1>
+            <a href="/"><img class="logo" src="/profile.png" alt="Profile Image"></a>
+            <a href="/"><h1 style="padding-inline:10px; text-decoration: none; color:#212529;">Karthik</h1></a>
         </div>
         <div class="nav-links">
-            <a href="/">Home</a>
+            <!-- Home</a> -->
             <a href="/projects">Projects</a>
             <a href="/blog">Blog</a>
         </div>
@@ -96,9 +104,9 @@
     <main>
         {% block content %}{% endblock %}
     </main>
-    <div style="height:1rem; justify-content:center; align-items: center; display: flex;">
+    <!-- <div style="height:1rem; justify-content:center; align-items: center; display: flex;">
         <img style="width:18rem;" src="https://embedlify.vercel.app/api/og?color=9ce3e3"/>
-    </div>
+    </div> -->
     <footer>
         <div class="navbar">
             <a href="mailto:karsab343@gmail.com" style="text-decoration: none;"><i class="bi bi-envelope-fill"></i> karsab343@gmail.com</a>

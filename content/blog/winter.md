@@ -1,5 +1,5 @@
 +++
-title = "Winter Update or: How I Need Better Titles, Oh Wait Actually \"So Long 2023!\""
+title = "Winter Update or: How I Need Better Titles"
 date = 2023-12-11
 description = "~blog"
 +++
