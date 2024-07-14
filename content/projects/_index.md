@@ -17,7 +17,7 @@ template = "index.html"
 </li>
 <li>
     <a style="text-decoration:none;" href="https://github.com/kach0w/garbaajo"><b>garbaajo</b></a>
-    <p style="color:#374151;">Another terrible CNN that doesn't even work on your own images ¯\_(ツ)_/¯
+    <p style="color:#374151;">Another terrible CNN that doesn't even work on your own images ¯\_(ツ)_/
     <br><i>PyTorch · ML</i></p>
 </li>
 <li>

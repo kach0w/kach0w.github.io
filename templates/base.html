@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ get_url(path='blog.css')}}">
     <style>
         body {
-            width: 45rem;
+            width: 35rem;
             max-width: 90%;
             padding: 0;
             margin: auto;
@@ -21,9 +21,9 @@
         }
         header {
             max-width: 100%;
-            display: flex;
+            display:flex;
+            margin-top:3rem;
             justify-content: space-between;
-            align-items: center;
         }
         footer {
             width:17.5rem;
@@ -36,10 +36,14 @@
             height: 50px;
             border-radius: 8px;
         }
+        a {
+            text-decoration: none;
+        }
         .nav-links {
             display: flex;
-            align-items: center;
             gap: 10px;
+            padding-top: 10px;
+            padding-right: 16px;
         }
         @media (max-width: 767px) {
             .logo {
@@ -77,25 +81,24 @@
         })();
     </script>
 </head>
-<body>
-    <div style="height: 3rem; justify-content:center; align-items: center; display: flex;">
-        <img style="width:18rem;" src="https://embedlify.vercel.app/api/og?color=9ce3e3"/>
-    </div>  
+<body>  
     <header>
-        <div style="display:flex; align-items: center;">
-            <a href="/"><img class="logo" src="/profile.png" alt="Profile Image"></a>
-            <h1 style="padding-inline: 10px;">Karthik</h1>
-                <!-- <p style="margin-top:13px;">{{ description }}</p> -->
+        <div style="display:flex;">
+            <img class="logo" src="/profile.png" alt="Profile Image">
+            <h1 style="padding-inline: 10px; text-decoration: none; ">Karthik</h1>
         </div>
-        <nav class="nav-links">
-            <a href="/projects" style="text-decoration: none;">Projects</a>
-            <a href="/blog" style="text-decoration: none;">Blog</a>
-            <!-- <a href="/resume.pdf" style="text-decoration: none;">Resume</a> -->
-        </nav>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/projects">Projects</a>
+            <a href="/blog">Blog</a>
+        </div>
     </header>
     <main>
         {% block content %}{% endblock %}
     </main>
+    <div style="height:1rem; justify-content:center; align-items: center; display: flex;">
+        <img style="width:18rem;" src="https://embedlify.vercel.app/api/og?color=9ce3e3"/>
+    </div>
     <footer>
         <div class="navbar">
             <a href="mailto:karsab343@gmail.com" style="text-decoration: none;"><i class="bi bi-envelope-fill"></i> karsab343@gmail.com</a>
