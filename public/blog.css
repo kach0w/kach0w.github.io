@@ -1,6 +1,6 @@
 .photo-album {
     position:relative;
-    width:45rem;
+    width:35rem;
     overflow: hidden;
     max-width:90vw;
     margin-top: 25px;
@@ -8,14 +8,14 @@
 }
 
 .photo-album-container {
-    width:45rem;
+    width:35rem;
     display: flex;
     align-items: center;
     max-width:90vw;
 }
 
 .photo-album-images {
-    width:30rem;
+    width:25rem;
     max-width:70vw;
     display: grid;
     grid-auto-flow: column;
@@ -25,9 +25,9 @@
 }
 
 .photo-album-images img {
-    width:30rem;
+    width:25rem;
     max-width:70vw;
-    height:22rem;
+    height:18rem;
     object-fit: cover;
     object-position: center;
     border-radius:10px;
