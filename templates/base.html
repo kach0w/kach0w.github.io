@@ -27,10 +27,12 @@
             justify-content: space-between;
         }
         footer {
-            width:17.5rem;
+            display:flex;
+            width:17rem;
             max-width: 100%;
-            text-align: center;
-            margin:auto
+            margin:auto;
+            justify-content: space-between;
+            margin-top:5px;
         }
         .logo {
             width: 50px;
@@ -104,11 +106,9 @@
         {% block content %}{% endblock %}
     </main>
     <footer>
-        <div>
-            <a href="mailto:karsab343@gmail.com" style="text-decoration: none;"><i class="bi bi-envelope-fill"></i> karsab343@gmail.com</a>
-            <a href="https://github.com/kach0w" style="text-decoration: none;"><i class="bi bi-github"></i> kach0w</a>
-            <!-- <a href="https://open.spotify.com/user/nxgivn07x6q7kek9tqchu05ha" style="text-decoration: none;"><i class="bi bi-spotify"></i> Kachow</a> -->
-        </div>
+        <a href="mailto:karsab343@gmail.com" style="text-decoration: none;"><i class="bi bi-envelope-fill"></i> karsab343@gmail.com</a>
+        <a href="https://github.com/kach0w" style="text-decoration: none;"><i class="bi bi-github"></i> kach0w</a>
+        <!-- <a href="https://open.spotify.com/user/nxgivn07x6q7kek9tqchu05ha" style="text-decoration: none;"><i class="bi bi-spotify"></i> Kachow</a> -->
     </footer>
 </body>
 </html>
