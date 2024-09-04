@@ -1,0 +1,27 @@
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust gap between books as needed */
+    width: 35rem;
+    margin:auto;
+    gap: 2rem;
+}
+.book-item {
+    box-sizing: border-box;
+    max-width: 118px;
+    text-align: center;
+}
+.book-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+     /* Set a max-width if needed */
+    max-height: 11.5rem; /* Set a max-height if needed */
+    border-radius: 10px;
+}
+.book-text {
+    margin-top: 2px;
+    font-size:18px;
+}
+.book-description {
+    font-size: 15px;
+}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set data = load_data(literal='{"2024":[{"title": "The Dark Tower: The Gunslinger", "author": "Stephen King", "cover_url": "https://www.googleapis.com/books/v1/volumes?q=intitle:The%20Dark%20Tower:%20The%20Gunslinger"},{"title": "The Remains of the Day", "author": "Kazuo Ishiguro", "cover_url": "https://www.googleapis.com/books/v1/volumes?q=intitle:The%20Remains%20of%20the%20Day"},{"title": "The Shining", "author": "Stephen King", "cover_url": "https://www.googleapis.com/books/v1/volumes?q=intitle:The%20Shining"},{"title": "Misery", "author": "Stephen King", "cover_url": "https://www.googleapis.com/books/v1/volumes?q=intitle:Misery"},{"title": "IT", "author": "Stephen King", "cover_url": "https://www.googleapis.com/books/v1/volumes?q=intitle:IT"},{"title": "Chapterhouse: Dune", "author": "Frank Herbert", "cover_url": "https://www.googleapis.com/books/v1/volumes?q=intitle:Chapterhouse:%20Dune"},{"title": "Klara and the Sun", "author": "Kazuo Ishiguro", "cover_url": "https://www.googleapis.com/books/v1/volumes?q=intitle:Klara%20and%20the%20Sun"}], "2023":[{"title": "The Catcher in the Rye", "author": "J.D. Salinger", "cover_url": "https://www.googleapis.com/books/v1/volumes?q=intitle:The%20Catcher%20in%20the%20Rye"}]}', format="json") %}
+<div style="margin-top:5px; text-align: center;">
+  {{ section.content | safe }}
+</div>
+<ul style="text-align:center; margin:auto">
+    {% for year, books in data %}
+    <h5>{{ year }}</h5>
+    <br>
+    <div class="book-container">
+        {% for book in books %}
+            {% set response = load_data(url=book["cover_url"], format="json") %}
+            <div class="book-item">
+                <img class="book-image" src="{{ response['items'][0]['volumeInfo']['imageLinks']['thumbnail'] }}" loading="lazy" alt="Book Image">
+                <h5 class="book-text">{{ book["title"] }}</h5>
+                <div class="book-text book-description">{{ book["author"] }}</div>
+            </div>
+        {% endfor %}
+    </div>
+    <br>
+    {% endfor %}
+</ul>
+
+{% endblock %}
