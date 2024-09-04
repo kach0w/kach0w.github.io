@@ -8,14 +8,12 @@
 }
 .book-item {
     box-sizing: border-box;
-    max-width: 118px;
+    max-width: 10rem;
     text-align: center;
 }
 .book-image {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-     /* Set a max-width if needed */
-    max-height: 11.5rem; /* Set a max-height if needed */
+    /* width: 100%; */
+    max-width: 10rem; /* Set a max-height if needed */
     border-radius: 10px;
 }
 .book-text {
