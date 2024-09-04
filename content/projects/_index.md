@@ -6,6 +6,12 @@ template = "index.html"
 
 <ul>
 <li>
+    <a href="https://github.com/kach0w/superfund-prediction">superfund-prediction</a> - Predicting Superfund locations with socioeconomic data 🗑️
+</li>
+<li>
+    <a href="https://github.com/kach0w/all-you-need-is-love">all-you-need-is-love</a> - From the attention paper, a Shakespeare TNN 🎺
+</li>
+<li>
     <a href="https://github.com/kach0w/letterbox-to-notion">letterbox-to-notion</a> - Sync your Letterboxd account to a Notion database 🎥
 </li>
 <li>
