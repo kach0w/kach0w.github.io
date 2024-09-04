@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     gap: 16px; /* Adjust gap between books as needed */
     width: 35rem;
+    max-width: 90vw;
     margin:auto;
     gap: 2rem;
 }
