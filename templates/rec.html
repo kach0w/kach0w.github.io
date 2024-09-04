@@ -4,8 +4,8 @@
 {% set data = load_data(literal='{"Automatic for the People": "R.E.M.", "Pet Sounds": "The Beach Boys", "Rubber Soul": "The Beatles", "Smiley Smile": "The Beach Boys", "OK Computer": "Radiohead", "Sgt. Peppers Lonely Hearts Club Band": "The Beatles",  "Help!": "The Beatles", "The Stranger": "Billy Joel", "American Idiot": "Green Day", "Tea for the Tillerman": "Cat Stevens", "Monster": "R.E.M.", "Dookie": "Green Day", "The Colour and the Shape": "Foo Fighters", "Transformer": "Lou Reed", "Whats the Story Morning Glory": "Oasis", "Rumours": "Fleetwood Mac", "There Is Nothing Left to Lose": "Foo Fighters", "The White Album": "The Beatles", "Louder Than Bombs": "The Smiths", "The Smiths": "The Smiths", "The Queen Is Dead": "The Smiths", "Meat Is Murder": "The Smiths", "Hatful of Hollow": "The Smiths", "Nevermind": "Nirvana", "Ziggy Stardust": "David Bowie", "Siamese Dream": "The Smashing Pumpkins", "The Joshua Tree": "U2", "Abbey Road": "The Beatles", "Use Your Illusion": "Guns N Roses"}', format="json") %}
 <head>
     <script>
-        const client_id = process.env.CLIENT_ID
-        const client_secret= process.env.CLIENT_SECRET
+        const client_id = "4c51830025e948c2828b869eeb701f32"
+        const client_secret= "9400a953bd0a4d4c9c59161a78c74a61"
         async function getToken() {
         const response = await fetch('https://accounts.spotify.com/api/token', {
             method: 'POST',
