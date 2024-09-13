@@ -4,17 +4,18 @@
     width: 35rem;
     max-width: 90vw;
     margin:auto;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 .book-item {
     box-sizing: border-box;
     width: 10rem;
     text-align: center;
+    max-width: 38vw;
 }
 .book-image {
-    /* width: 100%; */
-    max-width: 10rem; /* Set a max-height if needed */
-    border-radius: 10px;
+    width: 118px;
+    border-radius: 5px; 
+    height: 11.5rem;
 }
 .book-text {
     margin-top: 4px;
