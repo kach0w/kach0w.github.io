@@ -3,6 +3,7 @@ title = "Projects"
 description = "~/projects"
 template = "index.html"
 +++
+Here are some of my projects! You can probably find more on my GitHub. While looking through this you can kind of see my progression from simple websites built in pure Javascript and HTML, to more complex, framework-based sites, and finally to—what I consider—a good mix of web development and machine learning. Both are equally great!
 
 <ul>
 <li>
