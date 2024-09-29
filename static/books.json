@@ -1,6 +1,12 @@
 {
     "2024": [
         {
+            "title": "No Country For Old Men",
+            "author": "Cormac McCarthy",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/5/53/Cormac_McCarthy_NoCountryForOldMen.jpg",
+            "quote": "This country is hard on people."
+        },
+        {
             "title": "Atonement", 
             "author": "Ian McEwan", 
             "cover_url_longitood": "https://i5.walmartimages.com/asr/ac2baf42-9739-4182-a3e9-7cc8c923eb4c_1.896b86d956909b0d81272e924d29f977.jpeg",
