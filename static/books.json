@@ -1,10 +1,22 @@
 {
     "2024": [
         {
+            "title": "Amsterdam",
+            "author": "Ian McEwan",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/4/42/AmsterdamNovel.jpg",
+            "quote": "“Here was a rare sight below the waves, of a man's privacy and turmoil, of his dignity upended.”"
+        },
+        {
+            "title": "Sweet Tooth",
+            "author": "Ian McEwan",
+            "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fbakertaylor%2Fcovers%2Fs%2Fsweet-tooth%2F9780385536820_custom-2b3e16128becdfb232e40e4aad7e28ba6d4244e8-s1200.jpg&f=1&nofb=1&ipt=d3b730f62bdf915ba5a46fa1598b469667c6dcc671ab4a1efdd82c1ed029cc7c&ipo=images",
+            "quote": "“Love doesn't grow at a steady rate, but advances in surges, bolts, wild leaps, and this was one of those.”"
+        },
+        {
             "title": "No Country For Old Men",
             "author": "Cormac McCarthy",
             "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/5/53/Cormac_McCarthy_NoCountryForOldMen.jpg",
-            "quote": "This country is hard on people."
+            "quote": "“This country is hard on people.”"
         },
         {
             "title": "Atonement", 
