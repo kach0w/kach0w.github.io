@@ -1,6 +1,12 @@
 {
     "2024": [
         {
+            "title": "The Road", 
+            "author": "Cormac McCarthy",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/The-road.jpg/800px-The-road.jpg",
+            "quote": "“In the deep glens where they lived all things were older than man and they hummed of mystery.”"
+        },
+        {
             "title": "Amsterdam", 
             "author": "Ian McEwan",
             "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/4/42/AmsterdamNovel.jpg",
