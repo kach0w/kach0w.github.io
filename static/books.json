@@ -1,6 +1,12 @@
 {
     "2024": [
         {
+            "title": "Blood Meridian",
+            "author": "Cormac McCarthy",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/d/df/Blood_Meridian_Cormac_McCarthy_book_cover.png",
+            "quote": "“He never sleeps, the judge. He is dancing, dancing. He says that he will never die.”"
+        },
+        {
             "title": "The Road", 
             "author": "Cormac McCarthy",
             "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/The-road.jpg/800px-The-road.jpg",
@@ -22,7 +28,7 @@
             "title": "Gone Girl",
             "author": "Gillian Flynn",
             "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/7/7e/Gone_Girl_%28Flynn_novel%29.jpg",
-            "quote": "“Hell, at this point, I can't imagine my story without Amy. She is my forever antagonist. We are one frightening climax.”"
+            "quote": "“I can't imagine my story without Amy. She is my forever antagonist. We are one frightening climax.”"
         },
         {
             "title": "No Country For Old Men",
