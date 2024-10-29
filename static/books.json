@@ -1,6 +1,11 @@
 {
     "2024": [
         {   
+            "title": "The Sympathizer",
+            "author": "Viet Thanh Nguyen",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/1/10/The_Sympathizer_%28Viet_Thanh_Nguyen%29.png"
+        },
+        {   
             "title": "American Psycho",
             "author": "Bret Easton Ellis",
             "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/b/b5/American_Psycho_by_Bret_Easton_Ellis_first_US_paperback_edition_1991.jpg"
