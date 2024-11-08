@@ -1,6 +1,11 @@
 {
     "2024": [
          {   
+            "title": "Norwegian Wood",
+            "author": "Haruki Murakami",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/81h8IAc5qmL._AC_UF1000,1000_QL80_.jpg"
+         },
+         {   
             "title": "All the Pretty Horses",
             "author": "Cormac McMcCarthy",
             "cover_url_longitood": "https://m.media-amazon.com/images/I/716XjGV8m7L.jpg"
