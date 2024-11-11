@@ -1,5 +1,40 @@
 {
     "2024": [
+         {   
+            "title": "Norwegian Wood",
+            "author": "Haruki Murakami",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/81h8IAc5qmL._AC_UF1000,1000_QL80_.jpg"
+         },
+         {   
+            "title": "All the Pretty Horses",
+            "author": "Cormac McMcCarthy",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/716XjGV8m7L.jpg"
+        },
+        {   
+            "title": "Heart of Darkness",
+            "author": "Joseph Conrad",
+            "cover_url_longitood": "https://images.thenile.io/r1000/9780143106586.jpg"
+        },
+        {   
+            "title": "The Sympathizer",
+            "author": "Viet Thanh Nguyen",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/1/10/The_Sympathizer_%28Viet_Thanh_Nguyen%29.png"
+        },
+        {   
+            "title": "American Psycho",
+            "author": "Bret Easton Ellis",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/b/b5/American_Psycho_by_Bret_Easton_Ellis_first_US_paperback_edition_1991.jpg"
+        },
+        {
+            "title": "Franny and Zooey",
+            "author": "J.D. Salinger",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/61oBAWnHYHL._AC_UF1000,1000_QL80_FMwebp_.jpg"
+        },
+        {
+            "title": "Slaughterhouse 5",
+            "author": "Kurt Vonnegut",
+            "cover_url_longitood": "https://www.simbasible.com/wp-content/uploads/2021/04/1-768x1162.jpg"
+        },
         {
             "title": "The Goldfinch",
             "author": "Donna Tartt",
