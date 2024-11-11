@@ -75,7 +75,7 @@
                 margin:auto
            }
         }
-        #dropdown:hover #drop {
+        /* #dropdown:hover #drop {
             display:block;
         }
         #drop {
@@ -86,34 +86,42 @@
             border-radius: 8px; 
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
             padding: 8px;
-        }
+        } */
+
     </style>
     <script src="{{ get_url(path='/blog.js')}}"></script>
+    <script src="{{ get_url(path='/holidays.js')}}"></script>
+
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>  
     <header>
-        <div id="inner" style="display:flex;">
-            <a href="/"><img class="logo" src="/profile.png" alt="Profile Image"></a>
-            <div>
-            <a href="/"><h1 style="padding-inline:7.5px; padding-top:8px; line-height: 25px;">Karthik</h1></a>
-            <div class="nav-links">
-                <a href="/projects">Projects</a>
-                <a href="/blog">Blog</a>
-                <a href="/books">Shelf</a>
-                <!-- <div id="dropdown">
-                    <a href="#">Other <i class="bi bi-chevron-down"></i></a>
-                    <div id="drop">
-                        <a href="/books"><i class="bi bi-book"></i> Books</a>
-                        <br> <a href="/music"><i class="bi bi-music-note-beamed"></i> Music</a>
-                        <br> <a href="/resume.pdf"><i class="bi bi-file-earmark-person"></i> Resume</a>
-                        <br> <a href="https://open.spotify.com/user/nxgivn07x6q7kek9tqchu05ha" style="text-decoration: none;"><i class="bi bi-spotify"></i> Spotify</a>
-                        <br> <a href="https://kach0w.notion.site/1f30d68bcbcb4c9299e4ed4d2999328a?v=72c01c340b404e96a068fd9dffbf1390&pvs=74"><i class="bi bi-camera-reels"></i> Movies</a>
+        <div style="justify-content: space-between; width:100%; display:flex;">
+            <div style="display: flex;">
+                <a href="/"><img class="logo" src="/profile.png" alt="Profile Image"></a>
+                <div>
+                    <a href="/"><h1 style="padding-inline:7.5px; padding-top:8px; line-height: 25px;">Karthik</h1></a>
+                    <div class="nav-links">
+                        <a href="/projects">Projects</a>
+                        <a href="/blog">Blog</a>
+                        <a href="/books">Shelf</a>
+                        <!-- <div id="dropdown">
+                            <a href="#">Other <i class="bi bi-chevron-down"></i></a>
+                            <div id="drop">
+                                <a href="/books"><i class="bi bi-book"></i> Books</a>
+                                <br> <a href="/music"><i class="bi bi-music-note-beamed"></i> Music</a>
+                                <br> <a href="/resume.pdf"><i class="bi bi-file-earmark-person"></i> Resume</a>
+                                <br> <a href="https://open.spotify.com/user/nxgivn07x6q7kek9tqchu05ha" style="text-decoration: none;"><i class="bi bi-spotify"></i> Spotify</a>
+                                <br> <a href="https://kach0w.notion.site/1f30d68bcbcb4c9299e4ed4d2999328a?v=72c01c340b404e96a068fd9dffbf1390&pvs=74"><i class="bi bi-camera-reels"></i> Movies</a>
+                            </div>
+                        </div>      -->
                     </div>
-                </div>      -->
+                </div> 
+            </div>   
+            <div style="display: flex; padding-top:20px;">
+                <p id="holiday-img" style="padding-right: 4px;"></p>
+                <p id="holiday-message" style="padding-right: 4px;"></p> 
             </div>
-             
-        </div>  
         </div>
        
     </header>
