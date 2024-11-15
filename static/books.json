@@ -1,6 +1,11 @@
 {
     "2024": [
          {   
+            "title": "The Crucible",
+            "author": "Arthur Miller",
+            "cover_url_longitood": "http://images.randomhouse.com/cover/9780140481389?alt=no_cover_penguin.jpg"
+         },
+         {   
             "title": "Norwegian Wood",
             "author": "Haruki Murakami",
             "cover_url_longitood": "https://m.media-amazon.com/images/I/81h8IAc5qmL._AC_UF1000,1000_QL80_.jpg"
