@@ -1,6 +1,11 @@
 {
     "2024": [
          {   
+            "title": "Pet Semetary",
+            "author": "Stephen King",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/2/24/Pet_Sematary_%281983%29_front_cover%2C_first_edition.jpg"
+         },
+         {   
             "title": "In Cold Blood",
             "author": "Truman Capote",
             "cover_url_longitood": "https://images.penguinrandomhouse.com/cover/9780812994384"
