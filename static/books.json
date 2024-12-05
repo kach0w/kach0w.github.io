@@ -1,6 +1,11 @@
 {
     "2024": [
         {   
+            "title": "The Grapes of Wrath",
+            "author": "John Steinbeck",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/a/ad/The_Grapes_of_Wrath_%281939_1st_ed_cover%29.jpg"
+        },
+        {   
             "title": "Death of a Salesman",
             "author": "Arthur Miller",
             "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd1lp72kdku3ux1.cloudfront.net%2Ftitle_instance%2F6e4%2Fmedium%2F3354171.jpg&f=1&nofb=1&ipt=9bb9a7bf79940675077c0638b98b64335dfda2d75780180029b759323013d268&ipo=images"
