@@ -1,6 +1,11 @@
 {
     "2024": [
         {   
+            "title": "The Stranger",
+            "author": "Albert Camus",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/617WkdpG8xL._AC_UF1000,1000_QL80_.jpg"
+        },
+        {   
             "title": "The Grapes of Wrath",
             "author": "John Steinbeck",
             "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/a/ad/The_Grapes_of_Wrath_%281939_1st_ed_cover%29.jpg"
