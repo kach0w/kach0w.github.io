@@ -1,6 +1,11 @@
 {
     "2024": [
         {   
+            "title": "The Outsiders",
+            "author": "S.E. Hinton",
+            "cover_url_longitood": "https://images-na.ssl-images-amazon.com/images/I/810le-h9AlL.jpg"
+        },
+        {   
             "title": "The Stranger",
             "author": "Albert Camus",
             "cover_url_longitood": "https://m.media-amazon.com/images/I/617WkdpG8xL._AC_UF1000,1000_QL80_.jpg"
