@@ -7,25 +7,21 @@
 <div style="margin-top:5px; text-align: center;">
   {{ section.content | safe }}
 </div>
-<ul style="text-align:center; margin:auto">
-    
-    {% for year, books in data %}
-    <h5>{{ year }}</h5>
-    <br>
-    <div class="book-container">
-        {% for book in books %}
-            <div class="book-item">
-                <div class="image-thingy">
-                    <img class="book-image" src="{{ book['cover_url_longitood'] }}" loading="lazy" alt="Loading Cover...">
+{% for year, books in data %}
+    <h5 style="text-align:center">{{ year }}</h5><br>
+    <ul>
+        <div class="book-container">
+            {% for book in books %}
+                <div class="book-item">
+                    <div class="image-thingy">
+                        <img class="book-image" src="{{ book['cover_url_longitood'] }}" loading="lazy" alt="Loading Cover...">
+                    </div>
+                    <h5 class="book-text">{{ book["title"] }}</h5>
+                    <div class="book-description">{{ book["author"] }}</div>
                 </div>
-                <h5 class="book-text">{{ book["title"] }}</h5>
-                <div class="book-text book-description">{{ book["author"] }}</div>
+            {% endfor %}
+        </div>
+{% endfor %}
 
-            </div>
-        {% endfor %}
-    </div>
-    <br>
-    {% endfor %}
-</ul>
 
 {% endblock %}

@@ -1,11 +1,16 @@
 {
     "2024": [
         {   
+            "title": "Catch-22",
+            "author": "Joseph Heller",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Catch-22_%281961%29_front_cover%2C_first_edition.jpg/800px-Catch-22_%281961%29_front_cover%2C_first_edition.jpg"
+        },
+        {   
             "title": "Stranger in a Strange Land",
             "author": "Robert A. Heinlein",
             "cover_url_longitood": "https://m.media-amazon.com/images/I/818mv7RsZdL._AC_UF894,1000_QL80_.jpg"
         },
-         {   
+        {   
             "title": "Cat's Cradle",
             "author": "Kurt Vonnegut",
             "cover_url_longitood": "https://m.media-amazon.com/images/I/61m1ZXf1GLL.jpg"
