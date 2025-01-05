@@ -1,6 +1,11 @@
 {
     "2024": [
         {   
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "cover_url_longitood": "https://images.saymedia-content.com/.image/t_share/MTc0MjEyNDc1ODA4MzkyNzAw/nostalgia-in-the-great-gatsby.jpg"
+        },
+        {   
             "title": "Catch-22",
             "author": "Joseph Heller",
             "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Catch-22_%281961%29_front_cover%2C_first_edition.jpg/800px-Catch-22_%281961%29_front_cover%2C_first_edition.jpg"
