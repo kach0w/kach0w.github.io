@@ -1,5 +1,5 @@
 {
-    "2024": [
+    "2025": [
         {   
             "title": "Frankenstein",
             "author": "Mary Shelley",
@@ -15,6 +15,8 @@
             "author": "Joseph Heller",
             "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Catch-22_%281961%29_front_cover%2C_first_edition.jpg/800px-Catch-22_%281961%29_front_cover%2C_first_edition.jpg"
         },
+    ],
+    "2024": [
         {   
             "title": "Stranger in a Strange Land",
             "author": "Robert A. Heinlein",
