@@ -1,6 +1,11 @@
 {
     "2025": [
         {   
+            "title": "The Testaments",
+            "author": "Margaret Atwood",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/5/54/The_Testaments_%28Atwood_novel%29.png"
+        },
+        {   
             "title": "Frankenstein",
             "author": "Mary Shelley",
             "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.1tEhrLzN6ugvI61MY1zjbwHaLt%26pid%3DApi&f=1&ipt=a8f44aadb6d9ca82a26ab7abed8bd40cf57e52f8df83ae83ea3d6a430855c21d&ipo=images"
