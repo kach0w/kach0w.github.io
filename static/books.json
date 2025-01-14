@@ -1,6 +1,11 @@
 {
     "2025": [
-         {   
+        { 
+            "title": "Lord of the Flies",
+            "author": "William Golding",
+            "cover_url_longitood": "https://static.wikia.nocookie.net/allthetropes/images/3/31/Lord_of_the_Flies_Cover.png/revision/latest?cb=20200609080313"
+        },  
+        {   
             "title": "Station Eleven",
             "author": "Emily St. John Mandel",
             "cover_url_longitood": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1680459872i/20170404.jpg"
