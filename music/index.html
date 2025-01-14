@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="icon" type="image/png" href="/profile.png">
+    <link href="/static/index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://kach0w.github.io/blog.css">
+    <link rel="stylesheet" href="https://kach0w.github.io/books.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">    
+    <style>
+        body {
+            width: 42rem;
+            max-width: 90%;
+            padding: 0;
+            margin: auto;
+            box-sizing: border-box;
+            color: #212529;
+            font-size: 18px;
+            font-family: "Source Sans 3", serif;
+            font-weight: 400;
+        }
+        header {
+            max-width: 100%;
+            display:flex;
+            margin-top:3rem;
+            justify-content: space-between;
+        }
+        footer {
+            display:flex;
+            width:18rem;
+            max-width: 100%;
+            margin:auto;
+            justify-content: space-between;
+            margin-top:10px;
+            padding-bottom:10px;
+
+        }
+        .logo {
+            width: 70px;
+            height: 70px;
+            border-radius: 8px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 10px;
+            padding-inline:10px; 
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        h1 {
+            font-size: 45px;
+            color:#212529;
+            font-weight: 400;
+        }
+        @media (max-width: 767px) {
+            header {
+                margin-top:1.5rem;
+                margin-bottom:1rem;
+            }
+           #inner {
+                margin:auto
+           }
+        }
+        /* #dropdown:hover #drop {
+            display:block;
+        }
+        #drop {
+            display:none; 
+            z-index: 3; 
+            position: absolute; 
+            background-color: white;
+            border-radius: 8px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            padding: 8px;
+        } */
+
+    </style>
+    <script src="https://kach0w.github.io/blog.js"></script>
+    <script src="https://kach0w.github.io/holidays.js"></script>
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>  
+    <header>
+        <div style="justify-content: space-between; width:100%; display:flex;">
+            <div style="display: flex;">
+                <a href="/"><img class="logo" src="/profile.png" alt="Profile Image"></a>
+                <div>
+                    <a href="/"><h1 style="padding-inline:7.5px; padding-top:8px; line-height: 25px;">Karthik</h1></a>
+                    <div class="nav-links">
+                        <a href="/projects">Projects</a>
+                        <a href="/blog">Blog</a>
+                        <a href="/books">Shelf</a>
+                        <!-- <div id="dropdown">
+                            <a href="#">Other <i class="bi bi-chevron-down"></i></a>
+                            <div id="drop">
+                                <a href="/books"><i class="bi bi-book"></i> Books</a>
+                                <br> <a href="/music"><i class="bi bi-music-note-beamed"></i> Music</a>
+                                <br> <a href="/resume.pdf"><i class="bi bi-file-earmark-person"></i> Resume</a>
+                                <br> <a href="https://open.spotify.com/user/nxgivn07x6q7kek9tqchu05ha" style="text-decoration: none;"><i class="bi bi-spotify"></i> Spotify</a>
+                                <br> <a href="https://kach0w.notion.site/1f30d68bcbcb4c9299e4ed4d2999328a?v=72c01c340b404e96a068fd9dffbf1390&pvs=74"><i class="bi bi-camera-reels"></i> Movies</a>
+                            </div>
+                        </div>      -->
+                    </div>
+                </div> 
+            </div>   
+            <!-- <div style="display: flex; padding-top:20px;">
+                <p id="holiday-img" style="padding-right: 4px;"></p>
+                <p id="holiday-message" style="padding-right: 4px;"></p> 
+            </div> -->
+        </div>
+       
+    </header>
+    <main>
+        
+
+<head>
+    <script>
+        const client_id = "4c51830025e948c2828b869eeb701f32"
+        const client_secret= "9400a953bd0a4d4c9c59161a78c74a61"
+        async function getToken() {
+        const response = await fetch('https://accounts.spotify.com/api/token', {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Basic ' + btoa(client_id + ':' + client_secret),
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams({
+                'grant_type': 'client_credentials'
+            })
+        });
+        const data = await response.json();
+        return data.access_token;
+    }
+        async function getImage(album, artist, type){
+            if(type === "album"){
+                const token = await getToken();
+                const response = await fetch(`https://api.spotify.com/v1/search?q=album:${encodeURIComponent(album)}%20artist:${encodeURIComponent(artist)}&type=album&limit=1`, {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+                const data = await response.json();
+                if (data.albums.items.length > 0) {
+                    const url = data.albums.items[0].images[0].url;
+                    return url;
+                }
+                // let response = await fetch(`https://musicbrainz.org/ws/2/release-group/?query=release:${encodeURIComponent(album)} AND artist:${encodeURIComponent(artist)}&fmt=json&limit=1`);
+                // let data = await response.json();
+                // if (data['release-groups'] && data['release-groups'].length > 0) {
+                //     let releaseGroupId = data['release-groups'][0].id;
+                //     let coverResponse = await fetch(`https://coverartarchive.org/release-group/${releaseGroupId}`);
+                //     let coverData = await coverResponse.json();
+                //     if (coverData.images && coverData.images.length > 0) {
+                //         return coverData.images[0].thumbnails.large;
+                //     }
+                // }
+                // const tokenResponse = await fetch('/path-to-your-backend/get-spotify-token'); // Replace with your backend endpoint
+                // return fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(artist + " " + album)}&entity=album&limit=1`)
+                // .then(response => response.json())
+                // .then(data => {
+                //     if (data.results && data.results.length > 0) {
+                //         var url = data.results[0].artworkUrl100.replace('100x100', '200x200');
+
+                //         return url
+                //     }
+                // });
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const albumItems = document.querySelectorAll('.book-item');
+            albumItems.forEach(item => {
+                const title = item.dataset.title;
+                const artist = item.dataset.artist;
+                const imgElement = item.querySelector('.book-image');
+
+                getImage(title, artist, "album")
+                    .then(url => {
+                        imgElement.src = url;
+                    })
+            });
+        });
+    </script>
+</head>
+<div style="margin-top:5px; text-align: center;">
+  
+  <br>
+</div>
+<ul style="text-align:center; margin:auto">
+    <div class="book-container">
+        
+        <div class="book-item" data-title="Automatic for the People" data-artist="R.E.M.">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Automatic for the People</i></h5>
+            <h5 class="book-description"> R.E.M.</h5>
+        </div>
+    
+        <div class="book-item" data-title="Pet Sounds" data-artist="The Beach Boys">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Pet Sounds</i></h5>
+            <h5 class="book-description"> The Beach Boys</h5>
+        </div>
+    
+        <div class="book-item" data-title="Rubber Soul" data-artist="The Beatles">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Rubber Soul</i></h5>
+            <h5 class="book-description"> The Beatles</h5>
+        </div>
+    
+        <div class="book-item" data-title="Smiley Smile" data-artist="The Beach Boys">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Smiley Smile</i></h5>
+            <h5 class="book-description"> The Beach Boys</h5>
+        </div>
+    
+        <div class="book-item" data-title="OK Computer" data-artist="Radiohead">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>OK Computer</i></h5>
+            <h5 class="book-description"> Radiohead</h5>
+        </div>
+    
+        <div class="book-item" data-title="The Velvet Underground &amp; Nico" data-artist="The Velvet Underground &amp; Nico">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>The Velvet Underground &amp; Nico</i></h5>
+            <h5 class="book-description"> The Velvet Underground &amp; Nico</h5>
+        </div>
+    
+        <div class="book-item" data-title="Sgt. Peppers Lonely Hearts Club Band" data-artist="The Beatles">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Sgt. Peppers Lonely Hearts Club Band</i></h5>
+            <h5 class="book-description"> The Beatles</h5>
+        </div>
+    
+        <div class="book-item" data-title="Help!" data-artist="The Beatles">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Help!</i></h5>
+            <h5 class="book-description"> The Beatles</h5>
+        </div>
+    
+        <div class="book-item" data-title="The Stranger" data-artist="Billy Joel">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>The Stranger</i></h5>
+            <h5 class="book-description"> Billy Joel</h5>
+        </div>
+    
+        <div class="book-item" data-title="American Idiot" data-artist="Green Day">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>American Idiot</i></h5>
+            <h5 class="book-description"> Green Day</h5>
+        </div>
+    
+        <div class="book-item" data-title="Tea for the Tillerman" data-artist="Cat Stevens">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Tea for the Tillerman</i></h5>
+            <h5 class="book-description"> Cat Stevens</h5>
+        </div>
+    
+        <div class="book-item" data-title="Monster" data-artist="R.E.M.">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Monster</i></h5>
+            <h5 class="book-description"> R.E.M.</h5>
+        </div>
+    
+        <div class="book-item" data-title="Dookie" data-artist="Green Day">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Dookie</i></h5>
+            <h5 class="book-description"> Green Day</h5>
+        </div>
+    
+        <div class="book-item" data-title="The Colour and the Shape" data-artist="Foo Fighters">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>The Colour and the Shape</i></h5>
+            <h5 class="book-description"> Foo Fighters</h5>
+        </div>
+    
+        <div class="book-item" data-title="Transformer" data-artist="Lou Reed">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Transformer</i></h5>
+            <h5 class="book-description"> Lou Reed</h5>
+        </div>
+    
+        <div class="book-item" data-title="Whats the Story Morning Glory" data-artist="Oasis">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Whats the Story Morning Glory</i></h5>
+            <h5 class="book-description"> Oasis</h5>
+        </div>
+    
+        <div class="book-item" data-title="Rumours" data-artist="Fleetwood Mac">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Rumours</i></h5>
+            <h5 class="book-description"> Fleetwood Mac</h5>
+        </div>
+    
+        <div class="book-item" data-title="Doolittle" data-artist="Pixies">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Doolittle</i></h5>
+            <h5 class="book-description"> Pixies</h5>
+        </div>
+    
+        <div class="book-item" data-title="Born in the U.S.A." data-artist="Bruce Springsteen">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Born in the U.S.A.</i></h5>
+            <h5 class="book-description"> Bruce Springsteen</h5>
+        </div>
+    
+        <div class="book-item" data-title="There Is Nothing Left to Lose" data-artist="Foo Fighters">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>There Is Nothing Left to Lose</i></h5>
+            <h5 class="book-description"> Foo Fighters</h5>
+        </div>
+    
+        <div class="book-item" data-title="The White Album" data-artist="The Beatles">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>The White Album</i></h5>
+            <h5 class="book-description"> The Beatles</h5>
+        </div>
+    
+        <div class="book-item" data-title="Louder Than Bombs" data-artist="The Smiths">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Louder Than Bombs</i></h5>
+            <h5 class="book-description"> The Smiths</h5>
+        </div>
+    
+        <div class="book-item" data-title="The Smiths" data-artist="The Smiths">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>The Smiths</i></h5>
+            <h5 class="book-description"> The Smiths</h5>
+        </div>
+    
+        <div class="book-item" data-title="The Queen Is Dead" data-artist="The Smiths">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>The Queen Is Dead</i></h5>
+            <h5 class="book-description"> The Smiths</h5>
+        </div>
+    
+        <div class="book-item" data-title="Meat Is Murder" data-artist="The Smiths">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Meat Is Murder</i></h5>
+            <h5 class="book-description"> The Smiths</h5>
+        </div>
+    
+        <div class="book-item" data-title="Hatful of Hollow" data-artist="The Smiths">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Hatful of Hollow</i></h5>
+            <h5 class="book-description"> The Smiths</h5>
+        </div>
+    
+        <div class="book-item" data-title="Nevermind" data-artist="Nirvana">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Nevermind</i></h5>
+            <h5 class="book-description"> Nirvana</h5>
+        </div>
+    
+        <div class="book-item" data-title="Ziggy Stardust" data-artist="David Bowie">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Ziggy Stardust</i></h5>
+            <h5 class="book-description"> David Bowie</h5>
+        </div>
+    
+        <div class="book-item" data-title="Siamese Dream" data-artist="The Smashing Pumpkins">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Siamese Dream</i></h5>
+            <h5 class="book-description"> The Smashing Pumpkins</h5>
+        </div>
+    
+        <div class="book-item" data-title="The Joshua Tree" data-artist="U2">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>The Joshua Tree</i></h5>
+            <h5 class="book-description"> U2</h5>
+        </div>
+    
+        <div class="book-item" data-title="Abbey Road" data-artist="The Beatles">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Abbey Road</i></h5>
+            <h5 class="book-description"> The Beatles</h5>
+        </div>
+    
+        <div class="book-item" data-title="Use Your Illusion" data-artist="Guns N Roses">
+            <img class="book-image" src="/path/to/placeholder-image.jpg" alt="Loading album art..." style="width:8rem; height:8rem;">
+            <h5 class="book-text"><i>Use Your Illusion</i></h5>
+            <h5 class="book-description"> Guns N Roses</h5>
+        </div>
+    
+    </div>
+
+</ul>
+
+
+    </main>
+    <footer>
+        <a href="mailto:karsab343@gmail.com" style="text-decoration: none;"><i class="bi bi-envelope-fill"></i> karsab343@gmail.com</a>
+        <a href="https://github.com/kach0w" style="text-decoration: none;"><i class="bi bi-github"></i> kach0w</a>
+    </footer>
+</body>
+</html>
+
