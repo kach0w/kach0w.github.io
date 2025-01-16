@@ -1,6 +1,11 @@
 {
     "2025": [
         { 
+            "title": "Lincoln in the Bardo",
+            "author": "George Saunders",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/b/b5/Lincoln_in_the_Bardo_by_George_Saunders_first_edition.jpg"
+        },
+        { 
             "title": "Lord of the Flies",
             "author": "William Golding",
             "cover_url_longitood": "https://www.cornwallheritage.com/wp-content/uploads/2021/09/Lord-of-the-Flies-1st-Edition-Cover.jpg"
