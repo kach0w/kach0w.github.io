@@ -10,7 +10,7 @@ Starting off with the **Beatles**. It's usually "In My Life", but on occasion "D
 
 Next up is **R.E.M.**. It's definitely something off *Automatic for the People*. But what that is I don't really know - it changes depending on my mood. I think the safe choice would be "Nightswimming" but "Find the River" and "Everbody Hurts" are not far behind.
 
-The **Beach Boys** put the California in California. That's unfunny, but their songs, to me, are the perfect complement to a perfect summer day. They are part of its essence, tingling with the childish innocence of youth. That might be due to Carl Wilson, who along with Garfunkel, are in my opinion the greatest voice of the 1960s. As for the songs, it used to be "God Only Knows" with all of its complexities but these days, I've grown to appreciate the simple but just as impactful "Don't Worry Baby".
+The **Beach Boys** put the Cali in California. That's unfunny, but their songs, to me, are the perfect complement to a perfect summer day. They are part of its essence, tingling with the childish innocence of youth. That might be due to Carl Wilson, who along with Garfunkel, are in my opinion the greatest voice of the 1960s. As for the songs, it used to be "God Only Knows" with all of its complexities but these days, I've grown to appreciate the simple but just as impactful "Don't Worry Baby".
 
 Ah. **The Smiths**. What an atmosphere that name creates in my mind. Rainy days, punctured bicycles, desolate British hillsides - listening to The Smiths makes it clear that they are their own thing. I'm not sure what it is, but that interplay being Morrisey's vocals and Marr's "janky" sound create the most melodramatic songs. And for that, it seems like my favorite Smith's songs are just the saddest ones I find. So it's "Please, Please, Please, Let Me Get What I Want". 
 
@@ -31,4 +31,5 @@ I used to lack a feel for **Bob Dylan**. His voice, of "sandpaper and glue", was
 Last but not least is the **Talking Heads**. They're sleek, geeky songs are unlike anything I have ever heard, or ever will hear. They're proudly, unapologetically, 100-percently themselves, and that never shines through better than in the sentimenality and impact of my favorite: "This Must Be the Place".
 
 Until next time,
+
 Karthik
