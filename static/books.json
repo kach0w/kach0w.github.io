@@ -1,6 +1,11 @@
 {
     "2025": [
         { 
+            "title": "The Scarlet Letter",
+            "author": "Nathaniel Hawthorne",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/61iylEmE5kL._AC_UF1000,1000_QL80_.jpg"
+        },
+        { 
             "title": "Lincoln in the Bardo",
             "author": "George Saunders",
             "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/b/b5/Lincoln_in_the_Bardo_by_George_Saunders_first_edition.jpg"
