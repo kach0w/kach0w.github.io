@@ -1,6 +1,11 @@
 {
     "2025": [
-        { 
+         { 
+            "title": "Romeo & Juliet",
+            "author": "William Shakespeare",
+            "cover_url_longitood": "https://www.penguinreaders.co.uk/wp-content/uploads/2020/04/9780241430873-666x1024.jpg"
+        },
+        {          
             "title": "The Scarlet Letter",
             "author": "Nathaniel Hawthorne",
             "cover_url_longitood": "https://m.media-amazon.com/images/I/61iylEmE5kL._AC_UF1000,1000_QL80_.jpg"
