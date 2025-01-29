@@ -1,6 +1,11 @@
 {
     "2025": [
         { 
+            "title": "A Clockwork Orange",
+            "author": "Anthony Burgess",
+            "cover_url_longitood": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt4CVwiaUBP1zr62-5MYb2ctZOy0otq41jFg&s"
+        },
+        { 
             "title": "The Sound and the Fury",
             "author": "William Faulkner",
             "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/The_Sound_and_the_Fury_%281929_1st_ed_dust_jacket%29.jpg/440px-The_Sound_and_the_Fury_%281929_1st_ed_dust_jacket%29.jpg"
