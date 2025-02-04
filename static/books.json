@@ -1,6 +1,11 @@
 {
     "2025": [
         { 
+            "title": "East of Eden",
+            "author": "John Steinbeck",
+            "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F21%2F02%2F8b%2F21028b9626843f3837b862df3edd49ff.jpg&f=1&nofb=1&ipt=6933f165c1c30009f35a56460882f7ad2f8393822f68cdfa20cd0a8f081f36e4&ipo=images"
+        },
+        { 
             "title": "A Clockwork Orange",
             "author": "Anthony Burgess",
             "cover_url_longitood": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt4CVwiaUBP1zr62-5MYb2ctZOy0otq41jFg&s"
