@@ -1,6 +1,16 @@
 {
     "2025": [
         { 
+            "title": "The Metamorphosis",
+            "author": "Franz Kafka",
+            "cover_url_longitood": "https://www.walkingtogetherministries.com/wp-content/uploads/2015/05/the_metamorphosis_by_xmihax-d5k11yv-724x1024.jpg"
+        },
+        { 
+            "title": "The Bluest Eye",
+            "author": "Toni Morrison",
+            "cover_url_longitood": "https://i.pinimg.com/originals/46/4a/c2/464ac29e79fd863aa320e085b0fd62bc.jpg"
+        },
+        { 
             "title": "East of Eden",
             "author": "John Steinbeck",
             "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F21%2F02%2F8b%2F21028b9626843f3837b862df3edd49ff.jpg&f=1&nofb=1&ipt=6933f165c1c30009f35a56460882f7ad2f8393822f68cdfa20cd0a8f081f36e4&ipo=images"
