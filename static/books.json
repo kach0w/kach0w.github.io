@@ -1,6 +1,16 @@
 {
     "2025": [
         { 
+            "title": "White Noise",
+            "author": "Don DeLillo",
+            "cover_url_longitood": "https://images.penguinrandomhouse.com/cover/9780143129554"
+        },
+        { 
+            "title": "Hamlet",
+            "author": "William Shakespeare",
+            "cover_url_longitood": "https://cdn.domestika.org/c_fit,dpr_auto,f_auto,t_base_params,w_820/v1606756490/content-items/006/353/522/Hamlet-v10-original.jpg?1606756490"
+        },
+        { 
             "title": "The Metamorphosis",
             "author": "Franz Kafka",
             "cover_url_longitood": "https://www.walkingtogetherministries.com/wp-content/uploads/2015/05/the_metamorphosis_by_xmihax-d5k11yv-724x1024.jpg"
