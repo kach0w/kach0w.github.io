@@ -3,8 +3,8 @@ title = "Karthik"
 description = ""
 +++
 
-Hello there! I'm a high schooler from Fremont, CA. I use this website to share projects and write about things.
+Yoohoo, from Fremont, CA! I'm some kid lost in the expanse of an early senior year summer so although I currently don't know what *I'm* doing, I can tell you that this website is - or at least was supposed to be - used for showing some machine learning projects and writing about things.   
 
-I'm interested in machine learning, especially in the applications of computer vision. My other major interest is history. I frequently delve into local Bay Area records, ancient historicity, and philosophy on Wikipedia (I'm a bit of a fanatic).
+I'm presently finding out what my interests may be. History is a clear one; I spend too much time on the backrooms of the internet reading Bay Area historical records and surfing/contributing to Wikipedia where I frequent articles about philosophy and historicity. 
 
-When I'm not at my computer, you can find me reading, watching movies, biking along Alameda Creek, or listening to some rock. My favorite bands are R.E.M., the Beach Boys, and the Smiths. 🤘
+When I'm not at my computer - which, let's face it, I'm at most of the day - you can find me reading books, watching movies, playing video games, and hiking. I also listen to a ton of rock; my favorite bands are R.E.M., the Beatles, and the Smiths. 🤘
