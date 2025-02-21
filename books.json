@@ -1,0 +1,340 @@
+{
+    "2025": [
+        { 
+            "title": "White Noise",
+            "author": "Don DeLillo",
+            "cover_url_longitood": "https://images.penguinrandomhouse.com/cover/9780143129554"
+        },
+        { 
+            "title": "Hamlet",
+            "author": "William Shakespeare",
+            "cover_url_longitood": "https://cdn.domestika.org/c_fit,dpr_auto,f_auto,t_base_params,w_820/v1606756490/content-items/006/353/522/Hamlet-v10-original.jpg?1606756490"
+        },
+        { 
+            "title": "The Metamorphosis",
+            "author": "Franz Kafka",
+            "cover_url_longitood": "https://www.walkingtogetherministries.com/wp-content/uploads/2015/05/the_metamorphosis_by_xmihax-d5k11yv-724x1024.jpg"
+        },
+        { 
+            "title": "The Bluest Eye",
+            "author": "Toni Morrison",
+            "cover_url_longitood": "https://i.pinimg.com/originals/46/4a/c2/464ac29e79fd863aa320e085b0fd62bc.jpg"
+        },
+        { 
+            "title": "East of Eden",
+            "author": "John Steinbeck",
+            "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F21%2F02%2F8b%2F21028b9626843f3837b862df3edd49ff.jpg&f=1&nofb=1&ipt=6933f165c1c30009f35a56460882f7ad2f8393822f68cdfa20cd0a8f081f36e4&ipo=images"
+        },
+        { 
+            "title": "A Clockwork Orange",
+            "author": "Anthony Burgess",
+            "cover_url_longitood": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt4CVwiaUBP1zr62-5MYb2ctZOy0otq41jFg&s"
+        },
+        { 
+            "title": "The Sound and the Fury",
+            "author": "William Faulkner",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/The_Sound_and_the_Fury_%281929_1st_ed_dust_jacket%29.jpg/440px-The_Sound_and_the_Fury_%281929_1st_ed_dust_jacket%29.jpg"
+        },
+         { 
+            "title": "Romeo & Juliet",
+            "author": "William Shakespeare",
+            "cover_url_longitood": "https://www.penguinreaders.co.uk/wp-content/uploads/2020/04/9780241430873-666x1024.jpg"
+        },
+        {          
+            "title": "The Scarlet Letter",
+            "author": "Nathaniel Hawthorne",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/61iylEmE5kL._AC_UF1000,1000_QL80_.jpg"
+        },
+        { 
+            "title": "Lincoln in the Bardo",
+            "author": "George Saunders",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/b/b5/Lincoln_in_the_Bardo_by_George_Saunders_first_edition.jpg"
+        },
+        { 
+            "title": "Lord of the Flies",
+            "author": "William Golding",
+            "cover_url_longitood": "https://www.cornwallheritage.com/wp-content/uploads/2021/09/Lord-of-the-Flies-1st-Edition-Cover.jpg"
+        },  
+        {   
+            "title": "Station Eleven",
+            "author": "Emily St. John Mandel",
+            "cover_url_longitood": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1680459872i/20170404.jpg"
+        },  
+        {   
+            "title": "The Testaments",
+            "author": "Margaret Atwood",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/5/54/The_Testaments_%28Atwood_novel%29.png"
+        },
+        {   
+            "title": "Frankenstein",
+            "author": "Mary Shelley",
+            "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.1tEhrLzN6ugvI61MY1zjbwHaLt%26pid%3DApi&f=1&ipt=a8f44aadb6d9ca82a26ab7abed8bd40cf57e52f8df83ae83ea3d6a430855c21d&ipo=images"
+        },
+        {   
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "cover_url_longitood": "https://images.saymedia-content.com/.image/t_share/MTc0MjEyNDc1ODA4MzkyNzAw/nostalgia-in-the-great-gatsby.jpg"
+        },
+        {   
+            "title": "Catch-22",
+            "author": "Joseph Heller",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Catch-22_%281961%29_front_cover%2C_first_edition.jpg/800px-Catch-22_%281961%29_front_cover%2C_first_edition.jpg"
+        }
+    ],
+    "2024": [
+        {   
+            "title": "Stranger in a Strange Land",
+            "author": "Robert A. Heinlein",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/818mv7RsZdL._AC_UF894,1000_QL80_.jpg"
+        },
+        {   
+            "title": "Cat's Cradle",
+            "author": "Kurt Vonnegut",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/61m1ZXf1GLL.jpg"
+        },
+        {   
+            "title": "The Outsiders",
+            "author": "S.E. Hinton",
+            "cover_url_longitood": "https://images-na.ssl-images-amazon.com/images/I/810le-h9AlL.jpg"
+        },
+        {   
+            "title": "The Stranger",
+            "author": "Albert Camus",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/617WkdpG8xL._AC_UF1000,1000_QL80_.jpg"
+        },
+        {   
+            "title": "The Grapes of Wrath",
+            "author": "John Steinbeck",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/a/ad/The_Grapes_of_Wrath_%281939_1st_ed_cover%29.jpg"
+        },
+        {   
+            "title": "Death of a Salesman",
+            "author": "Arthur Miller",
+            "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd1lp72kdku3ux1.cloudfront.net%2Ftitle_instance%2F6e4%2Fmedium%2F3354171.jpg&f=1&nofb=1&ipt=9bb9a7bf79940675077c0638b98b64335dfda2d75780180029b759323013d268&ipo=images"
+         },
+        {   
+            "title": "Nutshell",
+            "author": "Ian McEwan",
+            "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fprodimage.images-bn.com%2Fpimages%2F9780525431947_p0_v3_s1200x630.jpg&f=1&nofb=1&ipt=35cef04332dad864b218ded01cc90755c4dda61b96d8c159380d8aa0f4d954b3&ipo=images"
+         },
+         {   
+            "title": "Pet Semetary",
+            "author": "Stephen King",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/2/24/Pet_Sematary_%281983%29_front_cover%2C_first_edition.jpg"
+         },
+         {   
+            "title": "In Cold Blood",
+            "author": "Truman Capote",
+            "cover_url_longitood": "https://images.penguinrandomhouse.com/cover/9780812994384"
+         },
+         {   
+            "title": "The Crucible",
+            "author": "Arthur Miller",
+            "cover_url_longitood": "http://images.randomhouse.com/cover/9780140481389?alt=no_cover_penguin.jpg"
+         },
+         {   
+            "title": "Norwegian Wood",
+            "author": "Haruki Murakami",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/81h8IAc5qmL._AC_UF1000,1000_QL80_.jpg"
+         },
+         {   
+            "title": "All the Pretty Horses",
+            "author": "Cormac McMcCarthy",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/716XjGV8m7L.jpg"
+        },
+        {   
+            "title": "Heart of Darkness",
+            "author": "Joseph Conrad",
+            "cover_url_longitood": "https://images.thenile.io/r1000/9780143106586.jpg"
+        },
+        {   
+            "title": "The Sympathizer",
+            "author": "Viet Thanh Nguyen",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/1/10/The_Sympathizer_%28Viet_Thanh_Nguyen%29.png"
+        },
+        {   
+            "title": "American Psycho",
+            "author": "Bret Easton Ellis",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/b/b5/American_Psycho_by_Bret_Easton_Ellis_first_US_paperback_edition_1991.jpg"
+        },
+        {
+            "title": "Franny and Zooey",
+            "author": "J.D. Salinger",
+            "cover_url_longitood": "https://m.media-amazon.com/images/I/61oBAWnHYHL._AC_UF1000,1000_QL80_FMwebp_.jpg"
+        },
+        {
+            "title": "Slaughterhouse 5",
+            "author": "Kurt Vonnegut",
+            "cover_url_longitood": "https://www.simbasible.com/wp-content/uploads/2021/04/1-768x1162.jpg"
+        },
+        {
+            "title": "The Goldfinch",
+            "author": "Donna Tartt",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/e/eb/The_goldfinch_by_donna_tart.png"
+        },
+        {
+            "title": "Blood Meridian",
+            "author": "Cormac McCarthy",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/d/df/Blood_Meridian_Cormac_McCarthy_book_cover.png",
+            "quote": "“He never sleeps, the judge. He is dancing, dancing. He says that he will never die.”"
+        },
+        {
+            "title": "The Road", 
+            "author": "Cormac McCarthy",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/The-road.jpg/800px-The-road.jpg",
+            "quote": "“In the deep glens where they lived all things were older than man and they hummed of mystery.”"
+        },
+        {
+            "title": "Amsterdam", 
+            "author": "Ian McEwan",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/4/42/AmsterdamNovel.jpg",
+            "quote": "“Here was a rare sight below the waves, of a man's privacy and turmoil, of his dignity upended.”"
+        },
+        {
+            "title": "Sweet Tooth",
+            "author": "Ian McEwan",
+            "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fbakertaylor%2Fcovers%2Fs%2Fsweet-tooth%2F9780385536820_custom-2b3e16128becdfb232e40e4aad7e28ba6d4244e8-s1200.jpg&f=1&nofb=1&ipt=d3b730f62bdf915ba5a46fa1598b469667c6dcc671ab4a1efdd82c1ed029cc7c&ipo=images",
+            "quote": "“Love doesn't grow at a steady rate, but advances in surges, bolts, wild leaps, and this was one of those.”"
+        },
+        {
+            "title": "Gone Girl",
+            "author": "Gillian Flynn",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/7/7e/Gone_Girl_%28Flynn_novel%29.jpg",
+            "quote": "“I can't imagine my story without Amy. She is my forever antagonist. We are one frightening climax.”"
+        },
+        {
+            "title": "No Country For Old Men",
+            "author": "Cormac McCarthy",
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/5/53/Cormac_McCarthy_NoCountryForOldMen.jpg",
+            "quote": "“This country is hard on people.”"
+        },
+        {
+            "title": "Atonement", 
+            "author": "Ian McEwan", 
+            "cover_url_longitood": "https://i5.walmartimages.com/asr/ac2baf42-9739-4182-a3e9-7cc8c923eb4c_1.896b86d956909b0d81272e924d29f977.jpeg",
+            "quote": "“I like to think that it isn't weakness or evasion, but a final act of kindness...to let my lovers live and to unite them.”"
+        },
+        {
+            "title": "The Handmaid's Tale",
+            "author": "Margaret Atwood",
+            "cover_url_longitood": "https://www.bookabookshop.co.uk/wp-content/uploads/2020/05/FRONTCOVER-6314-768x1179.jpg",
+            "quote": "“...the past is a great darkness, and filled with echoes.”"
+        },
+        {
+            "title": "On Chesil Beach", 
+            "author": "Ian McEwan", 
+            "cover_url_longitood": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1436962381i/815309.jpg",
+            "quote": "“...until she was a blurred, receding point against the immense straight road of shingle gleaming in the pallid light.”"
+        },
+        {
+            "title": "The Buried Giant", 
+            "author": "Kazuo Ishiguro", 
+            "cover_url_longitood": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1451444392i/22522805.jpg",
+            "quote": "“Wait for me on the shore, friend, I say quietly, but he does not hear and he wades on.”" 
+        },
+        {
+            "title": "Carrie", 
+            "author": "Stephen King", 
+            "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcadaverexquisito.com.ar%2Fstorage%2Fimages%2FOyw8DBcAOJxOe0gESBp0tvZ8wO5SffttC42xXtH6.jpg&f=1&nofb=1&ipt=21f8d23a930f4129bacec6dddfa7ec217ab119290c525b65694f1412599404cc&ipo=images",
+            "quote": "“It may be closer to the truth to say that Chamberlain will simply never again be.”"
+        },
+        {
+            "title": "Lessons", 
+            "author": "Ian McEwan", 
+            "cover_url_longitood": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1650842106i/60092581.jpg",
+            "quote": "“Life is messy, everybody makes mistakes because we're all fucking stupid.”"
+        },
+        {
+            "title": "11/22/63", 
+            "author": "Stephen King", 
+            "cover_url_longitood": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327876792i/10644930.jpg",
+            "quote": "“Dancing is life.”"
+        },
+        {
+            "title": "Never Let Me Go", 
+            "author": "Kazuo Ishiguro", 
+            "cover_url_longitood": "https://upload.wikimedia.org/wikipedia/en/6/66/Never_Let_Me_Go_%28First-edition_cover%29.jpg",
+            "quote": "“...a tiny figure would appear on the horizon across the field, and gradually get larger until I'd see it was Tommy.”"
+        },
+        {
+            "title": "The Dark Tower: The Gunslinger", 
+            "author": "Stephen King", 
+            "cover_url_longitood": "https://ilarge.lisimg.com/image/28601762/740full-the-dark-tower-1:-the-gunslinger-cover.jpg",
+            "quote": "“Suppose that all worlds, all universes, met at a single nexus, a single pylon, a Tower.”"
+        },
+        {
+            "title": "The Remains of the Day", 
+            "author": "Kazuo Ishiguro", 
+            "cover_url_longitood": "https://blackwells.co.uk/jacket/l/9780571258246.jpg",
+            "quote": "“The evening's the best part of the day. You've done your day's work. Now you can put your feet up and enjoy it.”"
+        },
+        {
+            "title": "The Shining", 
+            "author": "Stephen King", 
+            "cover_url_longitood": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e2b9ba48666347.589e049a2a9f2.jpg",
+            "quote": "“That's your job in this hard world, to keep your love alive and see that you get on, no matter what.”"
+        },
+        {
+            "title": "Misery", 
+            "author": "Stephen King", 
+            "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.JiLmZ_Vfwj3Z2IYC1dN0AwHaLR%26pid%3DApi&f=1&ipt=b656e9369380cb21fa6635c29e73af199b8ca67a3bf1af722673a6e0c8a0a5e2&ipo=images",
+            "quote": "“...unaware that he was weeping as he wrote.”"
+        },
+        {
+            "title": "IT", 
+            "author": "Stephen King", 
+            "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd28hgpri8am2if.cloudfront.net%2Fbook_images%2Fonix%2Fcvr9781501142970%2Fit-9781501142970_hr.jpg&f=1&nofb=1&ipt=4ac20bbcdd16aa76ce2b93c438ce3efeb21a5db44dae6435325979afc1961dc7&ipo=images",
+            "quote": "“...when he almost remembers his childhood, and the friends with whom he shared it.”"
+        },
+        {
+            "title": "Chapterhouse: Dune", 
+            "author": "Frank Herbert", 
+            "cover_url_longitood": "https://dunenovels.com/wp-content/uploads/2020/11/Chapterhouse-Dune-Cover.jpg",
+            "quote": "“Some will choke on that medicine. But the survivors may create interesting patterns.”"
+        },
+        {
+            "title": "Klara and the Sun", 
+            "author": "Kazuo Ishiguro", 
+            "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2021%2F02%2F18%2F71smjph9agl_custom-5d6f226a6893cad600edd5b03d35568fe7db5d7b-s1400.jpg&f=1&nofb=1&ipt=4a62182d6297969feb90a92747684b412f1e76c9ddad68b5f96eace8e656c69f&ipo=images",
+            "quote": "“There was something special very special, but it wasn't inside Josie. It was inside those who loved her.”"
+        }
+    ],
+    "2023": [
+        {
+            "title": "Heretics of Dune", 
+            "author": "Frank Herbert", 
+            "cover_url_longitood": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.adazing.com%2Fwp-content%2Fuploads%2F2023%2F07%2FDune-Book-Covers-Heretics-of-Dune-572x1024.jpg&f=1&nofb=1&ipt=2673a112cfc4e91ec7403e86fc6169b7a3102e4882cbc489e8d187754788b51b&ipo=images",
+            "quote": "“Hey! Old worm! Was this your design? There was no answer but then she had not really expected an answer.”"
+        }, 
+        {
+            "title": "God Emperor of Dune", 
+            "author": "Frank Herbert", 
+            "cover_url_longitood": "https://cdn.kobo.com/book-images/c441490f-8a20-426f-9f22-da3caab297d4/1200/1200/False/god-emperor-of-dune-1.jpg",
+            "quote": "“But what does it mean - arafel? That's the cloud-darkness of holy judgment. It's from an old story. You'll find it all in my journals.”"
+        }, 
+        {
+            "title": "Children of Dune", 
+            "author": "Frank Herbert", 
+            "cover_url_longitood": "https://images.contentreserve.com/ImageType-400/1523-1/535/F2C/75/%7B535F2C75-DBF6-46BF-B869-D3B48EEB7865%7DImg400.jpg",
+            "quote": "“One of us had to accept the agony, she said, and he was always the stronger.”"
+        }, 
+        {
+            "title": "Dune Messiah", 
+            "author": "Frank Herbert", 
+            "cover_url_longitood": "https://i.thenile.io/r1000/9780593098233.jpg?r=5e6201e639964",
+            "quote": "“Will you come with me, Duncan? Wherever you lead, he said.”" 
+        }, 
+        {
+            "title": "Dune", 
+            "author": "Frank Herbert", 
+            "cover_url_longitood": "https://media1.popsugar-assets.com/files/thumbor/Hvm0qqOKCeobnINciFW_LdoAH_A/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2021/10/20/864/n/1922283/tmp_DAIOuz_56216a0eb18116e2_d_u_n_e.jpeg",
+            "quote": "“While we, Chani, we who carry the name of concubine—history will call us wives.”"
+        }, 
+        {
+            "title": "The Catcher in the Rye", 
+            "author": "J.D. Salinger", 
+            "cover_url_longitood": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/the-catcher-in-the-rye-book-cover-gene-bradford.jpg",
+            "quote": "“It was just that she looked so damn nice, the way she kept going around and around, in her blue coat and all.”"
+        }
+    ]
+}
