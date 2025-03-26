@@ -1,5 +1,10 @@
 {
     "2025": [
+       { 
+            "title": "Adventures of Huckleberry Finn",
+            "author": "Mark Twain",
+            "cover_url_longitood": "https://logospressonline.com/cdn/shop/products/canon-classics-education-adventures-of-huckleberry-finn-7350685040688.jpg?v=1572553576"
+        },
         { 
             "title": "Moby Dick",
             "author": "Herman Melville",
