@@ -1,6 +1,11 @@
 {
     "2025": [
-       { 
+        {
+            "title": "Wuthering Heights",
+            "author": "Emily Brontë",
+            "cover_url_longitood": "https://notsomoderngirl.com/wp-content/uploads/2020/09/27870.books_.origjpg.jpg?w=777"
+        },
+        { 
             "title": "Adventures of Huckleberry Finn",
             "author": "Mark Twain",
             "cover_url_longitood": "https://logospressonline.com/cdn/shop/products/canon-classics-education-adventures-of-huckleberry-finn-7350685040688.jpg?v=1572553576"
