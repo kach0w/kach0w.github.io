@@ -1,6 +1,11 @@
 {
     "2025": [
         {
+            "title": "Macbeth",
+            "author": "William Shakespeare",
+            "cover_url_longitood": "https://images.macmillan.com/folio-assets/macmillan_us_frontbookcovers_1000H/9781909621886.jpg"
+        },
+        {
             "title": "Wuthering Heights",
             "author": "Emily Brontë",
             "cover_url_longitood": "https://notsomoderngirl.com/wp-content/uploads/2020/09/27870.books_.origjpg.jpg?w=777"
