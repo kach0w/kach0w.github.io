@@ -1,6 +1,11 @@
 {
     "2025": [
         {
+            "title": "The Portrait of Dorian Gray",
+            "author": "Oscar Wilde",
+            "cover_url_longitood": "https://images.booksense.com/images/178/812/9781398812178.jpg"
+        },  
+        {
             "title": "Macbeth",
             "author": "William Shakespeare",
             "cover_url_longitood": "https://images.macmillan.com/folio-assets/macmillan_us_frontbookcovers_1000H/9781909621886.jpg"
