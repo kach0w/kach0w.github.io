@@ -8,19 +8,19 @@
   {{ section.content | safe }}
 </div>
 {% for year, books in data %}
-    <h5 style="text-align:center">{{ year }}</h5><br>
+    <h5 style="text-align:center">{{ year }}</h5>
     <ul>
-        <div class="book-container">
+        <div class="">
             {% for book in books %}
-                <div class="book-item">
-                    <div class="image-thingy">
+                <div class="">
+                    <!-- <div class="image-thingy">
                         <img class="book-image" src="{{ book['cover_url_longitood'] }}" loading="lazy" alt="Loading Cover...">
-                    </div>
-                    <h5 class="book-text">{{ book["title"] }}</h5>
-                    <div class="book-description">{{ book["author"] }}</div>
+                    </div> -->
+                    <h5 class="book-text"><i>{{ book["title"] }}</i> - {{ book["author"] }}</h5>
                 </div>
             {% endfor %}
         </div>
+    </ul>
 {% endfor %}
 
 
