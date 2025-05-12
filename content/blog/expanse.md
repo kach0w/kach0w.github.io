@@ -1,5 +1,5 @@
 +++
-title = "The Expanse"
+title = "The Expanse of Summer"
 date = 2025-03-27
 description = "~blog"
 +++

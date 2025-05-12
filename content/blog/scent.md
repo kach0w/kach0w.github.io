@@ -1,5 +1,5 @@
 +++
-title = "Smells Like"
+title = "Smells Like?"
 date = 2025-05-07
 description = "~blog"
 +++
