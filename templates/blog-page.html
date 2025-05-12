@@ -5,9 +5,10 @@
   <div>
     <!-- <a style="text-decoration: none; float:left" href="/blog"><b><i class="bi bi-arrow-left"></i></b> Back</a><br><br> -->
    <!-- <h1><strong>{{ page.title }}</strong></h1> -->
-   <h2 style="font-size: 24px">{{ page.title }}</h1>
+   <h2 style="font-size:1.2rem">{{ page.title }}</h1>
   </div>
-  <p>{{ page.month}}/{{page.day}}/{{page.year}} • {{page.reading_time}} minute(s)</p>
+  <p style="font-size:0.9rem">{{ page.month}}/{{page.day}}/{{page.year}} • {{page.reading_time}} minute(s)</p>
 </div>
 {{ page.content | safe }}
+<hr>
 {% endblock content %}

@@ -25,15 +25,12 @@
             max-width: 90%;
             padding: 0;
             margin: auto;
-            box-sizing: border-box;
             color: #333;
-            /* font-size: 18px; */
             /* font-family: 'Libertine'; */
             /* font-family: "Inter"; */
             /* font-family: ui-serif,Georgia,Cambria,Times New Roman,Times,serif; */
             font-family: "Source Serif 4", serif;
             /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; */
-            /* font-weight: 400; */
         }
         header {
             max-width: 100%;
@@ -42,11 +39,7 @@
             justify-content: space-between;
         }
         footer {
-            /* display:flex; 
-            max-width: 100%;
-            margin:auto;
-            justify-content: space-between;
-            /* margin-top:10px; */
+            margin-top:10px;
             padding-bottom:15px;
 
         }
@@ -57,11 +50,6 @@
         }
         a {
             text-decoration: none;
-        }
-        .nav-links {
-            display: flex;
-            gap: 10px;
-            padding-inline:10px; 
         }
         ul {
             list-style-type: none;
@@ -78,41 +66,23 @@
                 margin-top:1.5rem;
                 margin-bottom:1rem;
             }
-           #inner {
-                margin:auto
-           }
         }
     </style>
     <script src="{{ get_url(path='/blog.js')}}"></script>
-    <!-- <script src="{{ get_url(path='/holidays.js')}}"></script> -->
-    <!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
 </head>
 <body>  
     <header>
         <div style="justify-content: space-between; width:100%; display:flex;">
             <div style="display: flex;">
-                <a href="/"><img class="logo" src="/profile.png" alt="Profile Image"></a>
+                <a href="/"><img class="logo" src="/profile.png" alt="Profile"></a>
                 <div>
                     <a href="/"><h1 style="padding-inline:7.5px; padding-top:6px;">Karthik</h1></a>
-                    <!-- <div class="nav-links">
-                        <a href="/projects">Projects</a>
-                        <a href="/blog">Blog</a>
-                        <a href="/books">Shelf</a>
-                        <div id="dropdown">
-                            <a href="#">Other <i class="bi bi-chevron-down"></i></a>
-                            <div id="drop">
-                                <a href="/books"><i class="bi bi-book"></i> Books</a>
-                                <br> <a href="https://open.spotify.com/user/nxgivn07x6q7kek9tqchu05ha" style="text-decoration: none;"><i class="bi bi-spotify"></i> Spotify</a>
-                            </div>
-                        </div>      
-                    </div> -->
                 </div> 
             </div>   
-            <div style="display: flex; padding-top: 10px">
+            <div style="display: flex; padding-top: 15px">
                 <a href="/blog">blog</a> &nbsp;/&nbsp; <a href="/books">books</a>
             </div>
         </div>
-       
     </header>
     <main>
         {% block content %}{% endblock %}

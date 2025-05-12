@@ -4,11 +4,11 @@
 {% set data = load_data(path='books.json', format="json") %}
 
 
-<div style="margin-top:5px; text-align: center;">
+<div style="text-align: center;">
   {{ section.content | safe }}
 </div>
 {% for year, books in data %}
-    <h5 style="text-align:center">{{ year }}</h5>
+    <h5 style="margin-top:5px; text-align:center; font-size:1.2rem">{{ year }}</h5>
     <ul>
         <div class="">
             {% for book in books %}
@@ -22,6 +22,5 @@
         </div>
     </ul>
 {% endfor %}
-
-
+<hr>
 {% endblock %}
