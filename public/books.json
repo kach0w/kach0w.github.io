@@ -1,5 +1,20 @@
 {
     "2025": [
+        {  
+            "title": "The Crying of Lot 49",
+            "author": "Thomas Pynchon",
+            "cover_url_longitood": "https://www.independentreviewofbooks.com/wp-content/uploads/2019/04/Sharp-Objects-Gillian-Flynn-400x609.jpg.webp"
+        },
+        {  
+            "title": "The Sirens of Titan",
+            "author": "Kurt Vonnegut",
+            "cover_url_longitood": "https://www.independentreviewofbooks.com/wp-content/uploads/2019/04/Sharp-Objects-Gillian-Flynn-400x609.jpg.webp"
+        },
+        {
+            "title": "The Glass Hotel",
+            "author": "Emily St. John Mandel",
+            "cover_url_longitood": "https://www.independentreviewofbooks.com/wp-content/uploads/2019/04/Sharp-Objects-Gillian-Flynn-400x609.jpg.webp"
+        },
         {
             "title": "Candide",
             "author": "Voltaire",
