@@ -7,7 +7,7 @@
 <ul>
   {% for page in section.pages%}
     {% if not page.extra["private"] %}
-      <li><a style="text-decoration-line: none;" href="{{ page.permalink | safe }}">{{ page.title }}</a> <span style="font-size:0.9rem">({{page.month}}/{{page.day}}/{{page.year}})</s></li>
+      <li><a style="text-decoration-line: none; text-transform: lowercase;" href="{{ page.permalink | safe }}">{{ page.title }}</a> <span style="font-size:0.9rem">({{page.month}}/{{page.day}}/{{page.year}})</s></li>
     {% endif %}
   {% endfor %}
 </ul>

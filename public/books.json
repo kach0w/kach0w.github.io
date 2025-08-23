@@ -1,6 +1,26 @@
 {
     "2025": [
         {  
+            "title": "Fight Club",
+            "author": "Chuck Palahniuk",
+            "cover_url_longitood": "https://www.independentreviewofbooks.com/wp-content/uploads/2019/04/Sharp-Objects-Gillian-Flynn-400x609.jpg.webp"
+        },
+        {
+            "title": "The Iliad",
+            "author": "Homer",
+            "cover_url_longitood": "https://www.independentreviewofbooks.com/wp-content/uploads/2019/04/Sharp-Objects-Gillian-Flynn-400x609.jpg.webp"
+        },
+        {  
+            "title": "King Lear",
+            "author": "William Shakespeare",
+            "cover_url_longitood": "https://www.independentreviewofbooks.com/wp-content/uploads/2019/04/Sharp-Objects-Gillian-Flynn-400x609.jpg.webp"
+        },
+        {  
+            "title": "Beloved",
+            "author": "Toni Morrison",
+            "cover_url_longitood": "https://www.independentreviewofbooks.com/wp-content/uploads/2019/04/Sharp-Objects-Gillian-Flynn-400x609.jpg.webp"
+        },
+        {  
             "title": "V.",
             "author": "Thomas Pynchon",
             "cover_url_longitood": "https://www.independentreviewofbooks.com/wp-content/uploads/2019/04/Sharp-Objects-Gillian-Flynn-400x609.jpg.webp"
