@@ -1,9 +1,15 @@
 {
-    "2025": [
+    "2026": [
+        {  
+            "title": "The Master and Margarita",
+            "author": "Mikhail Bulgakov"
+        },
         {  
             "title": "The Sun Also Rises",
             "author": "Ernest Hemingway"
-        },
+        }
+    ],
+    "2025": [
         {  
             "title": "Hamnet",
             "author": "Maggie O'Farrell"
