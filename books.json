@@ -1,0 +1,422 @@
+{
+    "2026": [
+        {  
+            "title": "Flesh",
+            "author": "David Szalay" 
+        },
+        {  
+            "title": "Inherent Vice",
+            "author": "Thomas Pynchon" 
+        },
+        {  
+            "title": "The Master and Margarita",
+            "author": "Mikhail Bulgakov"
+        },
+        {  
+            "title": "The Sun Also Rises",
+            "author": "Ernest Hemingway"
+        }
+    ],
+    "2025": [
+        {  
+            "title": "Hamnet",
+            "author": "Maggie O'Farrell"
+        },
+        {  
+            "title": "Notes from the Underground",
+            "author": "Fyodor Dostoevsky"
+        },
+        {  
+            "title": "100 Years of Solitude",
+            "author": "Gabriel Garcia Marques"
+        },
+        {  
+            "title": "Jurassic Park",
+            "author": "Michael Crichton"
+        },
+        {  
+            "title": "On the Road",
+            "author": "Jack Kerouac"
+        },
+        {  
+            "title": "Stoner",
+            "author": "John Williams"
+        },
+        {  
+            "title": "Vineland",
+            "author": "Thomas Pynchon"
+        },
+        {  
+            "title": "Pale Fire",
+            "author": "Vladimir Nabokov"
+        },
+        {  
+            "title": "A Farewell to Arms",
+            "author": "Ernest Hemingway"
+        },
+        {  
+            "title": "Fight Club",
+            "author": "Chuck Palahniuk"
+        },
+        {
+            "title": "The Iliad",
+            "author": "Homer"
+        },
+        {  
+            "title": "King Lear",
+            "author": "William Shakespeare"
+        },
+        {  
+            "title": "Beloved",
+            "author": "Toni Morrison"
+        },
+        {  
+            "title": "V.",
+            "author": "Thomas Pynchon"
+        },
+        {  
+            "title": "Last Night in Montreal",
+            "author": "Emily St. John Mandel"
+        },
+        {  
+            "title": "Child of God",
+            "author": "Cormac McCarthy"
+        },
+        {  
+            "title": "Strange Case of Dr. Jekyll and Mr. Hyde",
+            "author": "Robert Louis Stevenson"
+        },
+        {  
+            "title": "The Hitchhiker's Guide to the Galaxy",
+            "author": "Douglas Adams"
+        },
+        {  
+            "title": "Dracula",
+            "author": "Bram Stoker"
+        },
+        {  
+            "title": "The Plague",
+            "author": "Albert Camus"
+        },
+        {  
+            "title": "The Trial",
+            "author": "Franz Kafka"
+        },
+        {  
+            "title": "A Portrait of the Arist as a Young Man",
+            "author": "James Joyce"
+        },
+        {  
+            "title": "Sea of Tranquility",
+            "author": "Emily St. John Mandel"
+        },
+        {  
+            "title": "As I Lay Dying",
+            "author": "William Faulkner"
+        },
+        {  
+            "title": "Lolita",
+            "author": "Vladimir Nabokov"
+        },
+        {  
+            "title": "The Crying of Lot 49",
+            "author": "Thomas Pynchon"
+        },
+        {  
+            "title": "The Sirens of Titan",
+            "author": "Kurt Vonnegut"
+        },
+        {
+            "title": "The Glass Hotel",
+            "author": "Emily St. John Mandel"
+        },
+        {
+            "title": "Candide",
+            "author": "Voltaire"
+        },
+        {
+            "title": "Emma",
+            "author": "Jane Austen"
+        },
+        {
+            "title": "Small Things Like These",
+            "author": "Claire Keegan"
+        },
+        {
+            "title": "The Odyssey",
+            "author": "Homer"
+        }, 
+        {
+            "title": "Sharp Objects",
+            "author": "Gillian Flynn"
+        }, 
+        {
+            "title": "The Picture of Dorian Gray",
+            "author": "Oscar Wilde"
+        },  
+        {
+            "title": "Macbeth",
+            "author": "William Shakespeare"
+        },
+        {
+            "title": "Wuthering Heights",
+            "author": "Emily Brontë"
+        },
+        { 
+            "title": "Adventures of Huckleberry Finn",
+            "author": "Mark Twain"
+        },
+        { 
+            "title": "Moby Dick",
+            "author": "Herman Melville"
+        },
+        { 
+            "title": "White Noise",
+            "author": "Don DeLillo"
+        },
+        { 
+            "title": "Hamlet",
+            "author": "William Shakespeare"
+        },
+        { 
+            "title": "The Metamorphosis",
+            "author": "Franz Kafka"
+        },
+        { 
+            "title": "The Bluest Eye",
+            "author": "Toni Morrison"
+        },
+        { 
+            "title": "East of Eden",
+            "author": "John Steinbeck"
+        },
+        { 
+            "title": "A Clockwork Orange",
+            "author": "Anthony Burgess"
+        },
+        { 
+            "title": "The Sound and the Fury",
+            "author": "William Faulkner"
+        },
+         { 
+            "title": "Romeo & Juliet",
+            "author": "William Shakespeare"
+        },
+        {          
+            "title": "The Scarlet Letter",
+            "author": "Nathaniel Hawthorne"
+        },
+        { 
+            "title": "Lincoln in the Bardo",
+            "author": "George Saunders"
+        },
+        { 
+            "title": "Lord of the Flies",
+            "author": "William Golding"
+        },  
+        {   
+            "title": "Station Eleven",
+            "author": "Emily St. John Mandel"
+        },  
+        {   
+            "title": "The Testaments",
+            "author": "Margaret Atwood"
+        },
+        {   
+            "title": "Frankenstein",
+            "author": "Mary Shelley"
+        },
+        {   
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald"
+        },
+        {   
+            "title": "Catch-22",
+            "author": "Joseph Heller"
+        }
+    ],
+    "2024": [
+        {   
+            "title": "Stranger in a Strange Land",
+            "author": "Robert A. Heinlein"
+        },
+        {   
+            "title": "Cat's Cradle",
+            "author": "Kurt Vonnegut"
+        },
+        {   
+            "title": "The Outsiders",
+            "author": "S.E. Hinton"
+        },
+        {   
+            "title": "The Stranger",
+            "author": "Albert Camus"
+        },
+        {   
+            "title": "The Grapes of Wrath",
+            "author": "John Steinbeck"
+        },
+        {   
+            "title": "Death of a Salesman",
+            "author": "Arthur Miller"
+         },
+        {   
+            "title": "Nutshell",
+            "author": "Ian McEwan"
+         },
+         {   
+            "title": "Pet Semetary",
+            "author": "Stephen King"
+         },
+         {   
+            "title": "In Cold Blood",
+            "author": "Truman Capote"
+         },
+         {   
+            "title": "The Crucible",
+            "author": "Arthur Miller"
+         },
+         {   
+            "title": "Norwegian Wood",
+            "author": "Haruki Murakami"
+         },
+         {   
+            "title": "All the Pretty Horses",
+            "author": "Cormac McMcCarthy"
+        },
+        {   
+            "title": "Heart of Darkness",
+            "author": "Joseph Conrad"
+        },
+        {   
+            "title": "The Sympathizer",
+            "author": "Viet Thanh Nguyen"
+        },
+        {   
+            "title": "American Psycho",
+            "author": "Bret Easton Ellis"
+        },
+        {
+            "title": "Franny and Zooey",
+            "author": "J.D. Salinger"
+        },
+        {
+            "title": "Slaughterhouse 5",
+            "author": "Kurt Vonnegut"
+        },
+        {
+            "title": "The Goldfinch",
+            "author": "Donna Tartt"
+        },
+        {
+            "title": "Blood Meridian",
+            "author": "Cormac McCarthy"
+        },
+        {
+            "title": "The Road", 
+            "author": "Cormac McCarthy"
+        },
+        {
+            "title": "Amsterdam", 
+            "author": "Ian McEwan"
+        },
+        {
+            "title": "Sweet Tooth",
+            "author": "Ian McEwan"
+        },
+        {
+            "title": "Gone Girl",
+            "author": "Gillian Flynn"
+        },
+        {
+            "title": "No Country For Old Men",
+            "author": "Cormac McCarthy"
+        },
+        {
+            "title": "Atonement", 
+            "author": "Ian McEwan"
+        },
+        {
+            "title": "The Handmaid's Tale",
+            "author": "Margaret Atwood"
+        },
+        {
+            "title": "On Chesil Beach", 
+            "author": "Ian McEwan"
+        },
+        {
+            "title": "The Buried Giant", 
+            "author": "Kazuo Ishiguro"
+        },
+        {
+            "title": "Carrie", 
+            "author": "Stephen King"
+        },
+        {
+            "title": "Lessons", 
+            "author": "Ian McEwan"
+        },
+        {
+            "title": "11/22/63", 
+            "author": "Stephen King"
+        },
+        {
+            "title": "Never Let Me Go", 
+            "author": "Kazuo Ishiguro"
+        },
+        {
+            "title": "The Dark Tower: The Gunslinger", 
+            "author": "Stephen King"
+        },
+        {
+            "title": "The Remains of the Day", 
+            "author": "Kazuo Ishiguro"
+        },
+        {
+            "title": "The Shining", 
+            "author": "Stephen King"
+        },
+        {
+            "title": "Misery", 
+            "author": "Stephen King"
+        },
+        {
+            "title": "IT", 
+            "author": "Stephen King"
+        },
+        {
+            "title": "Chapterhouse: Dune", 
+            "author": "Frank Herbert"
+        },
+        {
+            "title": "Klara and the Sun", 
+            "author": "Kazuo Ishiguro"
+        }
+    ],
+    "2023": [
+        {
+            "title": "Heretics of Dune", 
+            "author": "Frank Herbert"
+        }, 
+        {
+            "title": "God Emperor of Dune", 
+            "author": "Frank Herbert"
+        }, 
+        {
+            "title": "Children of Dune", 
+            "author": "Frank Herbert"
+        }, 
+        {
+            "title": "Dune Messiah", 
+            "author": "Frank Herbert"
+        }, 
+        {
+            "title": "Dune", 
+            "author": "Frank Herbert"
+        }, 
+        {
+            "title": "The Catcher in the Rye", 
+            "author": "J.D. Salinger"
+        }
+    ]
+}
