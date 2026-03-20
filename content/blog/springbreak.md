@@ -6,38 +6,38 @@ description = "~blog"
 
 I'm writing most of this post around a week in advance of spring break. I just figured that with it coming it's a good time to get back to the blog.
 
-Let's track what's happened in August:
-- I celebrated my birthday away from home for the first time and with a completely new friend group
-- Classes started, revealing a few suprises here and there
-- I got back into reading (again)
-- Joined and quite a few clubs here and there
+Let's track what's happened in August: <br>
+\- I celebrated my birthday away from home for the first time and with a completely new friend group <br>
+\- Classes started, revealing a few suprises here and there <br>
+\- I got back into reading (again) <br>
+\- Joined and quit a few clubs here and there <br>
 
-September:
-- Bombed my first midterm.
-- Had fun at the first football games (especially Clemson)
+September: <br>
+\- Bombed my first midterm. <br>
+\- Had fun at the first football games (especially Clemson) <br>
 
-October:
-- Went "out" for the first time
-- Came back home for fall break
-- Saw Daniel Caesar at Piedmont
-- Homecoming weekend and Halloween!
+October: <br>
+\- Went "out" for the first time <br>
+\- Came back home for fall break <br>
+\- Saw Daniel Caesar at Piedmont <br>
+\- Homecoming weekend and Halloween! <br>
 
-Novemeber:
-- Busy with midterms
-- Talked to a girl
-- Pitt game
-- Thanksgiving Break and the Georgia game :/
+Novemeber: <br>
+\- Busy with midterms <br>
+\- Talked to a girl <br>
+\- Pitt game <br>
+\- Thanksgiving Break and the Georgia game :/ <br>
 
-December:
-- Busy with finals
-- Midnight Bud
-- Went back home and had a lot of fun!
+December: <br>
+\- Busy with finals <br>
+\- Midnight Bud <br>
+\- Went back home and had a lot of fun! <br>
 
-January/February:
-- Very cold!
+January/February: <br>
+\- Very cold! <br>
 
-March:
-- Hiking and volunteering
+March: <br>
+\- Hiking and volunteering <br>
 
 It would've made more sense to recap my first semester in it's own post but whatever. 
 
