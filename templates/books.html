@@ -8,16 +8,16 @@
   {{ section.content | safe }}
 </div>
 {% for year, books in data %}
-    <h5 style="margin-top:5px; text-align:center; font-size:1.2rem">{{ year }}</h5>
+    <h5 style="padding-left: 20px; margin-top:5px;font-size:1.2rem; text-decoration: underline; color: #D97757;">{{ year }}</h5>
     <ul>
-        <div class="">
+        <div style="background-color: white; padding: 15px; border-radius: 8px; border: 3px solid black;">
             {% for book in books %}
                 <div class="">
                     <div><i>{{ book["title"] }}</i> - {{ book["author"] }}</div>
                 </div>
             {% endfor %}
         </div>
+        <br>
     </ul>
 {% endfor %}
-<br>
 {% endblock %}
