@@ -5,6 +5,8 @@ description = ""
 
 Hey, I'm Karthik. Here's a bit about me:
 
-\- I study computer science at Georgia Tech. <br> 
-\- I like books, movies, tv shows and alt rock. <br>
-\- I'm trying to get better at baking.
+<ul class="custom-bullets">
+  <li>I study computer science at Georgia Tech.</li>
+  <li>I like books, movies, tv shows and alt rock.</li>
+  <li>I'm trying to get better at baking.</li>
+</ul>
