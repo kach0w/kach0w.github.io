@@ -8,7 +8,7 @@
   {{ section.content | safe }}
 </div>
 {% for year, books in data %}
-    <h5 style="margin-top:5px;font-size:1.2rem; text-decoration: underline; color: #7e9968;">{{ year }}</h5>
+    <h5 style="margin-top:5px;font-size:1.2rem; text-decoration: underline;">{{ year }}</h5>
     <ul>
         <div>
             {% for book in books %}
