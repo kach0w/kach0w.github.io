@@ -3,6 +3,9 @@ title = "Projects"
 +++
 
 Some projects, more on my [GitHub](https://github.com/kach0w).
+- 🖥️ [hackerhouse](https://github.com/kach0w/hackerhouse): online social coding yc sus hackathon
+- 👨‍🍳 [living-legacy](github.com/keesab123/living-legacy): fremont's at risk restaurants
+- 🚘 [safestreets](https://github.com/kach0w/cal-hacks-ai): cal hacks ai hackathon 
 - 🍎 [appetight](https://github.com/Alex-Epstein/claude_hackathon): claude builder club hackathon 
 - 🏭 [superfunds](https://ieeexplore.ieee.org/document/10903214): sjsu research for IEEE/ICMLA
 - 😷 [breast-cancer](https://emerginginvestigators.org/articles/22-061/pdf): asdrp paper
