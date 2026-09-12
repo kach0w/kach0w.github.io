@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="icon" type="image/png" href="/profile.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <style>
         body {
             width: 46rem;
@@ -25,143 +24,89 @@
         h1 { font-size: 2.3rem; color: #333; font-weight: 700; }
         .pf-byline { color: #7e9968; font-size: 0.9rem; margin-bottom: 2rem; }
 
-  .pf-section { margin-bottom: 3rem; }
-  .pf-section > h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #333;
-    margin: 0 0 0.35rem 0;
-  }
-  .pf-section > h2 .pf-num {
-    color: #7e9968;
-    font-weight: 400;
-    margin-right: 0.5rem;
-  }
-  .pf-section > h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #333;
-    margin: 2rem 0 0.6rem 0;
-  }
-  .pf-rule {
-    border: 0;
-    border-top: 1px solid #e6e3de;
-    margin: 0 0 1.5rem 0;
-  }
-  .pf-section p { line-height: 1.55; margin: 0 0 1rem 0; }
+        .pf-section { margin-bottom: 3rem; }
+        .pf-section > h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 1rem 0;
+        }
+        .pf-section > h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #333;
+            margin: 2rem 0 0.6rem 0;
+        }
+        .pf-section p { line-height: 1.55; margin: 0 0 1rem 0; }
 
-  .pf-bullets { list-style: disc; padding-left: 1.25rem; margin: 0 0 1rem 0; }
-  .pf-bullets li { margin-bottom: 0.6rem; line-height: 1.5; }
+        .pf-table-wrap { overflow-x: auto; margin-bottom: 1rem; }
+        table.pf-table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 0.9rem;
+            min-width: 34rem;
+        }
+        table.pf-table th, table.pf-table td {
+            text-align: left;
+            vertical-align: top;
+            padding: 0.6rem 0.7rem;
+            border-bottom: 1px solid #ecebe7;
+            line-height: 1.45;
+        }
+        table.pf-table th {
+            font-weight: 700;
+            color: #333;
+            border-bottom: 2px solid #d8d5cf;
+            white-space: nowrap;
+        }
+        table.pf-table td code {
+            font-size: 0.8rem;
+            color: #6b7f58;
+            background: #f4f6f1;
+            padding: 0.1rem 0.3rem;
+            border-radius: 4px;
+        }
 
-  /* Stack of feature cards */
-  .pf-card {
-    border: 1px solid #e6e3de;
-    border-radius: 10px;
-    padding: 1rem 1.15rem;
-    margin-bottom: 0.85rem;
-    background: #fcfcfb;
-  }
-  .pf-card h4 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #333;
-    margin: 0 0 0.15rem 0;
-  }
-  .pf-card .pf-route {
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-    font-size: 0.8rem;
-    color: #7e9968;
-    margin-bottom: 0.5rem;
-  }
-  .pf-card p { margin: 0; font-size: 0.95rem; line-height: 1.5; }
+        .pf-video {
+            border: 2px dashed #c9cfc0;
+            border-radius: 10px;
+            background: #f8faf6;
+            padding: 2.25rem 1.25rem;
+            text-align: center;
+            color: #6f7a63;
+        }
+        .pf-video strong { display: block; color: #55603f; margin-bottom: 0.3rem; }
 
-  /* Screens -> user stories table */
-  .pf-table-wrap { overflow-x: auto; margin-bottom: 1rem; }
-  table.pf-table {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 0.9rem;
-    min-width: 34rem;
-  }
-  table.pf-table th, table.pf-table td {
-    text-align: left;
-    vertical-align: top;
-    padding: 0.6rem 0.7rem;
-    border-bottom: 1px solid #ecebe7;
-    line-height: 1.45;
-  }
-  table.pf-table th {
-    font-weight: 700;
-    color: #333;
-    border-bottom: 2px solid #d8d5cf;
-    white-space: nowrap;
-  }
-  table.pf-table td code {
-    font-size: 0.8rem;
-    color: #6b7f58;
-    background: #f4f6f1;
-    padding: 0.1rem 0.3rem;
-    border-radius: 4px;
-  }
+        /* Standalone so it still works once the .pf-video placeholder is deleted. */
+        .pf-embed { position: relative; padding-bottom: 56.25%; height: 0; }
+        .pf-embed iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            border: 0; border-radius: 8px;
+        }
 
-  .pf-stack-list { margin: 0 0 1rem 0; padding: 0; list-style: none; }
-  .pf-stack-list li {
-    display: flex;
-    gap: 0.75rem;
-    padding: 0.45rem 0;
-    border-bottom: 1px solid #f0eeea;
-    font-size: 0.93rem;
-    line-height: 1.45;
-  }
-  .pf-stack-list li span:first-child {
-    flex: 0 0 8.5rem;
-    font-weight: 500;
-    color: #333;
-  }
+        .pf-meta {
+            font-size: 0.85rem;
+            color: #8a857d;
+            margin-top: 2.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e6e3de;
+        }
 
-  /* Video slot */
-  .pf-video {
-    border: 2px dashed #c9cfc0;
-    border-radius: 10px;
-    background: #f8faf6;
-    padding: 2.25rem 1.25rem;
-    text-align: center;
-    color: #6f7a63;
-  }
-  .pf-video strong { display: block; color: #55603f; margin-bottom: 0.3rem; }
-
-  /* Standalone so it still works once the .pf-video placeholder is deleted. */
-  .pf-embed { position: relative; padding-bottom: 56.25%; height: 0; }
-  .pf-embed iframe {
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    border: 0; border-radius: 8px;
-  }
-
-  .pf-meta {
-    font-size: 0.85rem;
-    color: #8a857d;
-    margin-top: 2.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid #e6e3de;
-  }
-
-  @media (max-width: 767px) {
-    body { width: 92%; }
-    .pf-stack-list li { flex-direction: column; gap: 0.1rem; }
-    .pf-stack-list li span:first-child { flex: none; }
-  }
+        @media (max-width: 767px) {
+            body { width: 92%; }
+        }
     </style>
 </head>
 <body>
 <main>
 
 
+
 <h1 style="font-size: 2rem; margin-bottom: 0.4rem; text-align: center;">GT Movies Store</h1>
 <div class="pf-byline" style="text-align: center;">Karthik Sabhanayakam</div>
 
 <section class="pf-section">
-  <h2><span class="pf-num">01</span>Introduction</h2>
-  <hr class="pf-rule">
+  <h2>Introduction</h2>
   <p>
     I'm Karthik, a 2nd year computer science student at Georgia Tech.
     I do robotics and machine learning research, right now on a multi-agent pedestrian
@@ -172,8 +117,7 @@
 </section>
 
 <section class="pf-section">
-  <h2><span class="pf-num">02</span>GT Movies Store</h2>
-  <hr class="pf-rule">
+  <h2>The app</h2>
   <p>
     GT Movies Store is a Django app for a movie storefront. Anyone can browse the
     catalog, search it, and read reviews. Once you have an account you can write reviews,
@@ -190,6 +134,10 @@
   </p>
 
   <h3>Screens</h3>
+  <p>
+    Each screen maps to one of the user stories for the project, like browsing movies,
+    leaving a review, or checking out:
+  </p>
   <div class="pf-table-wrap">
     <table class="pf-table">
       <thead>
@@ -272,8 +220,7 @@
 </section>
 
 <section class="pf-section">
-  <h2><span class="pf-num">03</span>Process</h2>
-  <hr class="pf-rule">
+  <h2>Process</h2>
   <p>
     I really just followed the textbook, breaking up each "work sprint" into smaller tasks I thought were managable. I basically went chapter by chapter and decided how much I could do.
   </p>
@@ -292,8 +239,7 @@
 </section>
 
 <section class="pf-section">
-  <h2><span class="pf-num">04</span>Video demonstration</h2>
-  <hr class="pf-rule">
+  <h2>Video demonstration</h2>
   <p>
     A walkthrough of the app: browsing and searching the catalog, signing up, reviewing a
     movie, and buying something.
