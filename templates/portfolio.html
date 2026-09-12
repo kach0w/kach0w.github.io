@@ -5,14 +5,6 @@
   /* This page is a report, so it needs more room than the 30rem site default. */
   body { width: 46rem; max-width: 92%; }
 
-  .pf-lede {
-    font-size: 1.05rem;
-    line-height: 1.55;
-    border-left: 3px solid #7e9968;
-    padding-left: 1rem;
-    margin: 0 0 2.5rem 0;
-    color: #4a4540;
-  }
   .pf-section { margin-bottom: 3rem; }
   .pf-section > h2 {
     font-size: 1.5rem;
@@ -140,35 +132,19 @@
   }
 </style>
 
-<h1 style="font-size: 2rem; margin-bottom: 0.75rem;">GT Movies Store</h1>
-
-<p class="pf-lede">
-  An online report on <strong>GT Movies Store</strong>, a Django web app for browsing
-  movies, reviewing them, and buying them. Who I am, what I built, how each screen
-  answers a user story, and how I actually worked on it.
-</p>
+<h1 style="font-size: 2rem; margin-bottom: 1.5rem;">GT Movies Store</h1>
 
 <section class="pf-section">
   <h2><span class="pf-num">01</span>Who I am</h2>
   <hr class="pf-rule">
   <p>
-    I'm Karthik. I study computer science at Georgia Tech.
-  </p>
-  <p>
-    Most of what I build is web apps or machine learning, usually both. I like projects
-    that take a messy dataset and put something usable in front of it.
-  </p>
-  <p>
-    Some of it got published. A model for prioritizing EPA Superfund cleanups at
-    <a href="https://ieeexplore.ieee.org/document/10903214">IEEE/ICMLA</a>, and a CNN on
-    breast cancer histology in
-    <a href="https://emerginginvestigators.org/articles/22-061/pdf">Journal of Emerging
-    Investigators</a>. The rest is hackathon projects and small tools, all on my
-    <a href="/projects">projects page</a>.
-  </p>
-  <p>
-    Otherwise I read a lot, watch too many movies, and listen to alt rock. Getting
-    assigned a movie store was lucky.
+    I'm Karthik and I study computer science at Georgia Tech. I mostly build web apps
+    and machine learning projects. A couple of them got published, one on
+    <a href="https://ieeexplore.ieee.org/document/10903214">EPA Superfund cleanups</a>
+    and one on
+    <a href="https://emerginginvestigators.org/articles/22-061/pdf">breast cancer
+    histology</a>. The rest are on my <a href="/projects">projects page</a>. Outside of
+    school I read a lot, watch movies, and listen to alt rock.
   </p>
 </section>
 
@@ -176,41 +152,32 @@
   <h2><span class="pf-num">02</span>GT Movies Store</h2>
   <hr class="pf-rule">
   <p>
-    GT Movies Store is a Django app for a movie storefront. You can browse the catalog,
-    search it, and read reviews without an account. Sign up and you can write reviews,
-    fill a cart, and check out into an order history.
+    GT Movies Store is a Django app for a movie storefront. Anyone can browse the
+    catalog, search it, and read reviews. Once you have an account you can write reviews,
+    add movies to a cart, and check out into an order history.
   </p>
 
-  <h3>Architecture</h3>
+  <h3>How it's put together</h3>
   <p>
-    I split it into four Django apps instead of one big one. Each owns its own urls,
-    views, templates, and models.
-  </p>
-  <ul class="pf-stack-list">
-    <li><span>home</span><span>Landing page and about page. No models.</span></li>
-    <li><span>movies</span><span>The <code>Movie</code> and <code>Review</code> models, the catalog, search, detail pages, and reviews.</span></li>
-    <li><span>cart</span><span>The session cart, plus the <code>Order</code> and <code>Item</code> models checkout writes to.</span></li>
-    <li><span>accounts</span><span>Signup, login, logout, and order history on top of Django's <code>User</code>.</span></li>
-  </ul>
-  <p>
-    The data model is small. <code>Movie</code> has a name, price, description, and an
-    uploaded image. <code>Review</code> points at both a movie and a user, so it always
-    knows who wrote it. That's what makes the ownership checks possible later.
+    It's four Django apps instead of one. <code>home</code> has the landing and about
+    pages, <code>movies</code> has the catalog and reviews, <code>cart</code> has the
+    cart and checkout, and <code>accounts</code> handles signup, login, and order
+    history on top of Django's built in <code>User</code>.
   </p>
   <p>
-    Checkout creates an <code>Order</code> for the user and one <code>Item</code> per
-    movie. Each item copies the price and quantity at the time of purchase. That part
-    matters. Because the price is copied instead of read through the foreign key,
-    changing a movie's price later doesn't rewrite what someone already paid.
+    There are four models. <code>Movie</code> has a name, price, description, and image.
+    <code>Review</code> points at both a movie and a user, so the app can check if a
+    review is yours before letting you edit it. Checkout creates an <code>Order</code>
+    and one <code>Item</code> per movie. Each item saves the price it was bought at
+    instead of reading it off the movie, so changing a price later doesn't change old
+    orders.
   </p>
   <p>
-    The cart lives in the session, not the database, as a map of movie id to quantity. So
-    you can fill a cart before you have an account. Only <code>purchase</code> is behind
-    <code>@login_required</code>, so you hit the login wall at checkout instead of at the
-    door.
+    The cart is kept in the session instead of the database, so you can add movies before
+    making an account. Only checkout requires being logged in.
   </p>
 
-  <h3>Screens and the user stories they answer</h3>
+  <h3>Screens</h3>
   <div class="pf-table-wrap">
     <table class="pf-table">
       <thead>
@@ -224,74 +191,71 @@
         <tr>
           <td>Home</td>
           <td><code>/</code></td>
-          <td>The front door. Store branding and a way into the catalog, so a first visit lands somewhere instead of on a bare list.</td>
+          <td>Landing page with the store branding and a way into the catalog.</td>
         </tr>
         <tr>
           <td>About</td>
           <td><code>/about</code></td>
-          <td>Static page for "what is this store".</td>
+          <td>Static page describing the store.</td>
         </tr>
         <tr>
           <td>Movie list</td>
           <td><code>/movies/</code></td>
-          <td>"Browse all movies" and "search by name". The view reads a <code>search</code> query param and filters with a case insensitive <code>name__icontains</code>. No param means the full catalog, so one screen covers both stories and an empty search never dead ends.</td>
+          <td>Lists every movie, and filters on a case insensitive name match when you search.</td>
         </tr>
         <tr>
           <td>Movie detail</td>
           <td><code>/movies/&lt;id&gt;/</code></td>
-          <td>"See the details" and "read the reviews". Shows the image, description, and price, pulls every review for that movie, and holds the add to cart form and the review box.</td>
+          <td>Shows one movie's image, description, and price, along with its reviews and the add to cart form.</td>
         </tr>
         <tr>
           <td>Sign up</td>
           <td><code>/accounts/signup</code></td>
-          <td>"Make an account". Wraps Django's <code>UserCreationForm</code> in a subclass that drops the default help text and adds Bootstrap classes. A custom error list renders validation errors as styled alerts instead of a raw list.</td>
+          <td>Creates an account using Django's <code>UserCreationForm</code>, restyled to match the rest of the site.</td>
         </tr>
         <tr>
           <td>Login and logout</td>
           <td><code>/accounts/login/</code></td>
-          <td>"Log in and out". Authenticates against Django's backend. A failure re renders the form with one generic message, so a wrong password doesn't tell you whether the username exists.</td>
+          <td>Authenticates against Django's backend, with one generic error message when it fails.</td>
         </tr>
         <tr>
           <td>Cart</td>
           <td><code>/cart/</code></td>
-          <td>"Add movies with a quantity and see the total". Lists what's in the session cart, totals it in a <code>calculate_cart_total</code> helper, and has a clear button. A custom filter, <code>get_quantity</code>, pulls each quantity out of the session dict in the template, since Django templates can't subscript a dict by a variable key. That filter is what keeps the logic out of the view.</td>
+          <td>Lists what's in the session cart with a running total and a button to empty it.</td>
         </tr>
         <tr>
           <td>Purchase confirmation</td>
           <td><code>/cart/purchase/</code></td>
-          <td>"Check out". Saves the order and its items, empties the session cart so a refresh can't order twice, and shows the new order id.</td>
+          <td>Saves the order, clears the cart so a refresh can't order twice, and shows the order id.</td>
         </tr>
         <tr>
           <td>Order history</td>
           <td><code>/accounts/orders/</code></td>
-          <td>"See my past orders". Reads orders off the logged in user through the reverse relation, so it's scoped to that account automatically instead of by a filter I could forget.</td>
+          <td>Lists the logged in user's past orders.</td>
         </tr>
         <tr>
-          <td>Create, edit, delete review</td>
+          <td>Reviews</td>
           <td><code>/movies/&lt;id&gt;/review/...</code></td>
-          <td>"Write a review, edit or delete my own". All four review views are behind <code>@login_required</code>. Edit checks that the review's author is the current user and redirects away if not. Delete scopes its lookup to <code>user=request.user</code>, so someone else's review 404s instead of getting deleted. Empty comments get rejected on create and edit.</td>
+          <td>Lets a logged in user post a review, and edit or delete their own.</td>
         </tr>
         <tr>
           <td>Report review</td>
           <td><code>/movies/&lt;id&gt;/review/&lt;id&gt;/report/</code></td>
-          <td>Extra feature, not one of the required stories. A logged in user can take down a review they think is inappropriate without waiting on an admin.</td>
+          <td>Lets a logged in user take down a review they think is inappropriate.</td>
         </tr>
         <tr>
           <td>Admin</td>
           <td><code>/admin/</code></td>
-          <td>Django admin with the models registered, so staff can manage the catalog. Poster uploads land in <code>media/movie_images/</code> and get served through a <code>MEDIA_URL</code> route in development.</td>
+          <td>Django admin for managing the catalog, including poster uploads.</td>
         </tr>
       </tbody>
     </table>
   </div>
-
-  <h3>Interface</h3>
   <p>
-    Every page extends one <code>base.html</code> holding the navbar and footer, so a new
-    page gets the shared layout for free. The navbar knows if you're logged in. It swaps
-    Login and Sign Up for Orders and a logout link with your username on it, so you can
-    always tell which account you're in. Layout is Bootstrap 5 over a small custom
-    stylesheet, and the navbar collapses so the store still works on a phone.
+    Every page extends one <code>base.html</code> with the navbar and footer in it. The
+    navbar changes depending on whether you're logged in, swapping Login and Sign Up for
+    Orders and a logout link with your username on it. Layout is Bootstrap 5 with a small
+    stylesheet on top.
   </p>
 </section>
 
@@ -299,42 +263,28 @@
   <h2><span class="pf-num">03</span>Process</h2>
   <hr class="pf-rule">
   <p>
-    I built it one app at a time and treated each user story as one piece of work.
-    Instead of designing the whole schema first and wiring views to it after, I took one
-    feature all the way through (model, url, view, template) and checked it in the
-    browser before starting the next.
+    I did one app at a time instead of building everything at once. For each user story I
+    added the model, the url, the view, and the template, then checked it in the browser
+    before moving on.
   </p>
   <p>
-    The order followed what depended on what. <code>home</code> first, to get a skeleton
-    rendering. <code>movies</code> next, since everything else points at a movie.
-    <code>accounts</code> after that, because reviews and orders both need a real user.
-    <code>cart</code> last, because it needs both.
+    The order was based on what needed what. <code>home</code> first to get a page
+    rendering, then <code>movies</code> since everything else refers to a movie, then
+    <code>accounts</code> because reviews and orders need a user, and <code>cart</code>
+    last. Building accounts before reviews was useful because a review needs an author
+    before you can check who is allowed to edit it.
   </p>
   <p>
-    That helped at the places where features met. Reviews only mean something once login
-    exists. "Edit your own review" is meaningless without an author, so building accounts
-    before reviews saved me from bolting ownership onto rows that never had it.
+    For questions I mostly used the Django docs, especially the pages on sessions and the
+    auth decorators. When there were a few ways to do something I went with whatever kept
+    logic out of the templates, which is why the cart total is a helper function and the
+    quantity lookup is a template filter. For bugs I read the traceback and used the admin
+    to see what was in the database.
   </p>
   <p>
-    When I had a question I went to the Django docs first. They're good at explaining why
-    something works the way it does, not just what to call. The pages on sessions and on
-    the auth decorators answered most of my design questions. Where the docs gave a few
-    valid options I picked whichever kept logic out of the templates. That's why the cart
-    total is a helper function and the quantity lookup is a custom filter, instead of
-    both being jammed into the page.
-  </p>
-  <p>
-    For bugs I used Django's debug traceback and the dev server's auto reload to keep the
-    loop short, and checked the admin to see what was actually in the database instead of
-    guessing.
-  </p>
-  <p>
-    The habit that helped most was not trusting the happy path. It's easy to test a
-    feature by doing the exact thing it was built for. All my bugs were one step to the
-    side. An empty review. Refreshing the confirmation page after checking out. Trying to
-    edit a review that wasn't mine. Walking each screen through those is what turned the
-    <code>login_required</code> decorators and ownership checks into something I could
-    explain instead of something I copied.
+    Most of the bugs I hit were in the cases around a feature rather than the feature
+    itself, like empty reviews, refreshing the confirmation page, or trying to edit
+    someone else's review. The login and ownership checks came out of testing those.
   </p>
 </section>
 
@@ -342,8 +292,8 @@
   <h2><span class="pf-num">04</span>Video demonstration</h2>
   <hr class="pf-rule">
   <p>
-    A walkthrough of the app: browsing and searching, signing up, reviewing a movie, and
-    buying something start to finish.
+    A walkthrough of the app: browsing and searching the catalog, signing up, reviewing a
+    movie, and buying something.
   </p>
   <!--
     TO ADD THE VIDEO: delete the <div class="pf-video"> block below and uncomment
