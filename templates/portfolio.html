@@ -138,10 +138,10 @@
   <h2><span class="pf-num">01</span>Who I am</h2>
   <hr class="pf-rule">
   <p>
-    I'm Karthik, a computer science student at Georgia Tech graduating in December 2027.
+    I'm Karthik, a 2nd year computer science student at Georgia Tech.
     I do robotics and machine learning research, right now on a multi-agent pedestrian
     simulator at the Intelligent Vision and Automation Lab, and before that on marine
-    vehicle autonomy in ROS 2. I mostly write Python and TypeScript, and picked up Django
+    vehicle autonomy in ROS2. I mostly write Python and JavaScript, and picked up Django
     for this project.
   </p>
 </section>
@@ -157,22 +157,15 @@
 
   <h3>How it's put together</h3>
   <p>
-    It's four Django apps instead of one. <code>home</code> has the landing and about
-    pages, <code>movies</code> has the catalog and reviews, <code>cart</code> has the
-    cart and checkout, and <code>accounts</code> handles signup, login, and order
-    history on top of Django's built in <code>User</code>.
+    Four Django apps: <code>home</code> for the landing and about pages,
+    <code>movies</code> for the catalog and reviews, <code>cart</code> for the cart and
+    checkout, and <code>accounts</code> for signup, login, and order history.
   </p>
   <p>
-    There are four models. <code>Movie</code> has a name, price, description, and image.
-    <code>Review</code> points at both a movie and a user, so the app can check if a
-    review is yours before letting you edit it. Checkout creates an <code>Order</code>
-    and one <code>Item</code> per movie. Each item saves the price it was bought at
-    instead of reading it off the movie, so changing a price later doesn't change old
-    orders.
-  </p>
-  <p>
-    The cart is kept in the session instead of the database, so you can add movies before
-    making an account. Only checkout requires being logged in.
+    <code>Review</code> points at both a movie and a user, so the app knows whether a
+    review is yours before letting you edit it. Each <code>Item</code> saves the price it
+    was bought at, so changing a price later doesn't affect old orders. The cart lives in
+    the session instead of the database, so you can add movies before making an account.
   </p>
 
   <h3>Screens</h3>
