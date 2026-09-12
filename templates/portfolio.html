@@ -1,0 +1,381 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+  /* This page is a report, so it needs more room than the 30rem site default. */
+  body { width: 46rem; max-width: 92%; }
+
+  .pf-lede {
+    font-size: 1.05rem;
+    line-height: 1.55;
+    border-left: 3px solid #7e9968;
+    padding-left: 1rem;
+    margin: 0 0 2.5rem 0;
+    color: #4a4540;
+  }
+  .pf-section { margin-bottom: 3rem; }
+  .pf-section > h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 0.35rem 0;
+  }
+  .pf-section > h2 .pf-num {
+    color: #7e9968;
+    font-weight: 400;
+    margin-right: 0.5rem;
+  }
+  .pf-section > h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    margin: 2rem 0 0.6rem 0;
+  }
+  .pf-rule {
+    border: 0;
+    border-top: 1px solid #e6e3de;
+    margin: 0 0 1.5rem 0;
+  }
+  .pf-section p { line-height: 1.55; margin: 0 0 1rem 0; }
+
+  .pf-bullets { list-style: disc; padding-left: 1.25rem; margin: 0 0 1rem 0; }
+  .pf-bullets li { margin-bottom: 0.6rem; line-height: 1.5; }
+
+  /* Stack of feature cards */
+  .pf-card {
+    border: 1px solid #e6e3de;
+    border-radius: 10px;
+    padding: 1rem 1.15rem;
+    margin-bottom: 0.85rem;
+    background: #fcfcfb;
+  }
+  .pf-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 0.15rem 0;
+  }
+  .pf-card .pf-route {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.8rem;
+    color: #7e9968;
+    margin-bottom: 0.5rem;
+  }
+  .pf-card p { margin: 0; font-size: 0.95rem; line-height: 1.5; }
+
+  /* Screens -> user stories table */
+  .pf-table-wrap { overflow-x: auto; margin-bottom: 1rem; }
+  table.pf-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.9rem;
+    min-width: 34rem;
+  }
+  table.pf-table th, table.pf-table td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.6rem 0.7rem;
+    border-bottom: 1px solid #ecebe7;
+    line-height: 1.45;
+  }
+  table.pf-table th {
+    font-weight: 700;
+    color: #333;
+    border-bottom: 2px solid #d8d5cf;
+    white-space: nowrap;
+  }
+  table.pf-table td code {
+    font-size: 0.8rem;
+    color: #6b7f58;
+    background: #f4f6f1;
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+  }
+
+  .pf-stack-list { margin: 0 0 1rem 0; padding: 0; list-style: none; }
+  .pf-stack-list li {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid #f0eeea;
+    font-size: 0.93rem;
+    line-height: 1.45;
+  }
+  .pf-stack-list li span:first-child {
+    flex: 0 0 8.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+
+  /* Video slot */
+  .pf-video {
+    border: 2px dashed #c9cfc0;
+    border-radius: 10px;
+    background: #f8faf6;
+    padding: 2.25rem 1.25rem;
+    text-align: center;
+    color: #6f7a63;
+  }
+  .pf-video strong { display: block; color: #55603f; margin-bottom: 0.3rem; }
+
+  /* Standalone so it still works once the .pf-video placeholder is deleted. */
+  .pf-embed { position: relative; padding-bottom: 56.25%; height: 0; }
+  .pf-embed iframe {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    border: 0; border-radius: 8px;
+  }
+
+  .pf-meta {
+    font-size: 0.85rem;
+    color: #8a857d;
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e6e3de;
+  }
+
+  @media (max-width: 767px) {
+    body { width: 92%; }
+    .pf-stack-list li { flex-direction: column; gap: 0.1rem; }
+    .pf-stack-list li span:first-child { flex: none; }
+  }
+</style>
+
+<h1 style="font-size: 2rem; margin-bottom: 0.75rem;">GT Movies Store</h1>
+
+<p class="pf-lede">
+  An online report on <strong>GT Movies Store</strong> &mdash; a Django web application
+  for browsing a movie catalog, reviewing titles, and placing orders. This page covers
+  who I am, what I built, how the screens satisfy the project&rsquo;s user stories, and
+  how I actually worked through it.
+</p>
+
+<section class="pf-section">
+  <h2><span class="pf-num">01</span>Who I am</h2>
+  <hr class="pf-rule">
+  <p>
+    I&rsquo;m Karthik, a computer science student at Georgia Tech. Most of what I build
+    sits somewhere between web apps and applied machine learning &mdash; I like projects
+    that take a messy real-world dataset and put a usable interface in front of it.
+  </p>
+  <p>
+    Some of that work has ended up published: a machine learning approach to prioritizing
+    EPA Superfund site cleanup, presented at
+    <a href="https://ieeexplore.ieee.org/document/10903214">IEEE/ICMLA</a>, and a
+    convolutional-network study on breast cancer histology in
+    <a href="https://emerginginvestigators.org/articles/22-061/pdf">Journal of Emerging
+    Investigators</a>. The rest is a long tail of hackathon projects and small tools,
+    collected on my <a href="/projects">projects page</a> and
+    <a href="https://github.com/kach0w">GitHub</a>.
+  </p>
+  <p>
+    Away from the keyboard I read a lot (tracked on my <a href="/shelf">shelf</a>), watch
+    more movies than I probably should &mdash; which made this particular project a
+    pleasant one to get assigned &mdash; listen to alt rock, and am slowly getting better
+    at baking.
+  </p>
+</section>
+
+<section class="pf-section">
+  <h2><span class="pf-num">02</span>GT Movies Store</h2>
+  <hr class="pf-rule">
+  <p>
+    GT Movies Store is a full-stack Django application built around a movie storefront.
+    A visitor can browse and search the catalog and read reviews without an account;
+    once they sign up, they can write and manage their own reviews, build a cart, and
+    check out into a persistent order history.
+  </p>
+
+  <h3>Architecture</h3>
+  <p>
+    Rather than one monolithic app, the project is split into four focused Django apps
+    under a <code>moviestore</code> project, each owning its own URLs, views, templates,
+    and models. The root URLconf mounts them at their own prefixes:
+  </p>
+  <ul class="pf-stack-list">
+    <li><span>home</span><span>Landing page and About page &mdash; static marketing surface, no models.</span></li>
+    <li><span>movies</span><span>The <code>Movie</code> and <code>Review</code> models, catalog listing, search, detail pages, and the full review lifecycle.</span></li>
+    <li><span>cart</span><span>Session-backed cart plus the <code>Order</code> and <code>Item</code> models that a checkout writes to.</span></li>
+    <li><span>accounts</span><span>Signup, login, logout, and per-user order history on top of Django&rsquo;s built-in <code>User</code>.</span></li>
+  </ul>
+  <p>
+    The data model is deliberately small. <code>Movie</code> holds a name, price,
+    description, and an uploaded image; <code>Review</code> foreign-keys to both a movie
+    and a user, so a review always knows who wrote it &mdash; which is what makes
+    ownership checks possible later. At checkout, an <code>Order</code> is created for the
+    user and one <code>Item</code> row is written per movie, each snapshotting the price
+    and quantity at purchase time. That snapshot matters: because the price is copied onto
+    the item rather than read through the foreign key, editing a movie&rsquo;s price later
+    doesn&rsquo;t silently rewrite the history of what someone already paid.
+  </p>
+  <p>
+    The cart itself lives in the Django session instead of the database, as a mapping of
+    movie ID to quantity. An anonymous visitor can therefore fill a cart before having an
+    account; only <code>purchase</code> is gated behind <code>@login_required</code>, so
+    the login wall appears at checkout rather than at the door.
+  </p>
+
+  <h3>Screens and features against the user stories</h3>
+  <div class="pf-table-wrap">
+    <table class="pf-table">
+      <thead>
+        <tr>
+          <th>Screen</th>
+          <th>Route</th>
+          <th>How it answers the user story</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Home</td>
+          <td><code>/</code></td>
+          <td>Entry point with the store&rsquo;s branding and a path into the catalog, so a first-time visitor lands somewhere oriented rather than on a bare list.</td>
+        </tr>
+        <tr>
+          <td>About</td>
+          <td><code>/about</code></td>
+          <td>Static informational page &mdash; <em>&ldquo;as a visitor I want to know what this store is.&rdquo;</em></td>
+        </tr>
+        <tr>
+          <td>Movie list</td>
+          <td><code>/movies/</code></td>
+          <td><em>&ldquo;Browse all movies&rdquo;</em> and <em>&ldquo;search for a movie by name.&rdquo;</em> The view reads a <code>search</code> query parameter and filters with a case-insensitive <code>name__icontains</code> match; with no parameter it falls through to the full catalog, so the same screen serves both stories and an empty search never strands the user.</td>
+        </tr>
+        <tr>
+          <td>Movie detail</td>
+          <td><code>/movies/&lt;id&gt;/</code></td>
+          <td><em>&ldquo;See a movie&rsquo;s details&rdquo;</em> and <em>&ldquo;read its reviews.&rdquo;</em> Renders the image, description, and price, pulls every <code>Review</code> for that movie, and hosts the add-to-cart quantity form and the review composer.</td>
+        </tr>
+        <tr>
+          <td>Sign up</td>
+          <td><code>/accounts/signup</code></td>
+          <td><em>&ldquo;Create an account.&rdquo;</em> Wraps Django&rsquo;s <code>UserCreationForm</code> in a custom subclass that strips the default help text and applies Bootstrap classes, with a custom error list that renders validation failures as styled alerts instead of a raw <code>&lt;ul&gt;</code>.</td>
+        </tr>
+        <tr>
+          <td>Login / logout</td>
+          <td><code>/accounts/login/</code></td>
+          <td><em>&ldquo;Log in and out.&rdquo;</em> Authenticates against Django&rsquo;s backend and re-renders the form with a single non-enumerating error message on failure, so a wrong password doesn&rsquo;t reveal whether the username exists.</td>
+        </tr>
+        <tr>
+          <td>Cart</td>
+          <td><code>/cart/</code></td>
+          <td><em>&ldquo;Add movies to a cart, with a quantity, and see the total.&rdquo;</em> Lists everything in the session cart, computes the running total in a dedicated <code>calculate_cart_total</code> helper, and offers a clear-cart action. A custom template filter, <code>get_quantity</code>, looks up each movie&rsquo;s quantity from the session dictionary inside the template &mdash; Django templates can&rsquo;t subscript a dict by variable key, so that filter is what keeps the logic out of the view.</td>
+        </tr>
+        <tr>
+          <td>Purchase confirmation</td>
+          <td><code>/cart/purchase/</code></td>
+          <td><em>&ldquo;Check out.&rdquo;</em> Persists the <code>Order</code> and its <code>Item</code> rows, empties the session cart so a refresh can&rsquo;t double-order, and confirms with the new order ID.</td>
+        </tr>
+        <tr>
+          <td>Order history</td>
+          <td><code>/accounts/orders/</code></td>
+          <td><em>&ldquo;See my past orders.&rdquo;</em> Reads orders through the reverse relation on the logged-in user, so the query is scoped to that account by construction rather than by a filter someone could forget.</td>
+        </tr>
+        <tr>
+          <td>Create / edit / delete review</td>
+          <td><code>/movies/&lt;id&gt;/review/&hellip;</code></td>
+          <td><em>&ldquo;Write a review, and edit or delete my own.&rdquo;</em> All four review views sit behind <code>@login_required</code>. Edit re-checks that the review&rsquo;s author is the current user and redirects away if not, and delete scopes its lookup to <code>user=request.user</code> so someone else&rsquo;s review 404s instead of being removed. Empty comments are rejected on both create and edit.</td>
+        </tr>
+        <tr>
+          <td>Report review</td>
+          <td><code>/movies/&lt;id&gt;/review/&lt;id&gt;/report/</code></td>
+          <td>An addition beyond the core stories: a signed-in user can remove a review they consider inappropriate, giving the community a way to clear bad content without waiting on an admin.</td>
+        </tr>
+        <tr>
+          <td>Admin</td>
+          <td><code>/admin/</code></td>
+          <td>Django&rsquo;s admin, with the models registered so a staff user can manage the catalog &mdash; including poster uploads, which are written to <code>media/movie_images/</code> and served through a <code>MEDIA_URL</code> static route in development.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Interface</h3>
+  <p>
+    Every screen extends one <code>base.html</code> template holding the navigation bar
+    and footer, so a new page inherits the shared chrome for free. The nav is
+    authentication-aware: it swaps Login and Sign Up for Orders and a Logout link
+    labelled with the current username, which gives the user a persistent signal about
+    which account they&rsquo;re in. Layout is Bootstrap 5 over a small custom stylesheet,
+    with a collapsing toggle so the store stays usable at phone width.
+  </p>
+</section>
+
+<section class="pf-section">
+  <h2><span class="pf-num">03</span>Process</h2>
+  <hr class="pf-rule">
+  <p>
+    I worked through this incrementally, one Django app at a time, treating each user
+    story as the unit of work. Rather than designing the whole schema up front and wiring
+    views to it afterwards, I took a vertical slice per feature &mdash; model, URL, view,
+    template &mdash; and confirmed it worked in the browser before moving to the next. The
+    order followed the data dependencies: <code>home</code> first to get a project
+    skeleton rendering, then <code>movies</code> since everything else refers to a movie,
+    then <code>accounts</code> because reviews and orders both need a real user, and
+    <code>cart</code> last as it depends on both.
+  </p>
+  <p>
+    That ordering paid off at the points where features met. Reviews, for instance, only
+    became meaningful once authentication existed &mdash; a review needs an author before
+    &ldquo;edit your own review&rdquo; means anything &mdash; so building accounts before
+    the review lifecycle avoided retrofitting ownership onto anonymous rows.
+  </p>
+  <p>
+    For questions and doubts, my first stop was the official Django documentation, which
+    is unusually good at explaining not just the API but the intent behind it; the
+    reference on sessions and on the authentication decorators settled most of my design
+    questions directly. Where the docs described several valid options, I picked the one
+    that kept logic out of the templates &mdash; that&rsquo;s how the cart total ended up
+    in a helper function and the quantity lookup in a custom template filter rather than
+    both being inlined into the page. When something behaved unexpectedly, I leaned on
+    Django&rsquo;s debug traceback and the development server&rsquo;s auto-reload to
+    shorten the loop, and checked my assumptions about what was actually in the database
+    through the admin rather than guessing.
+  </p>
+  <p>
+    The most useful habit was distrusting the happy path. It&rsquo;s easy to verify a
+    feature by doing the thing it was built for; the bugs were all in the cases next door
+    &mdash; submitting an empty review, refreshing the confirmation page after checking
+    out, trying to edit a review belonging to someone else. Walking each screen through
+    those cases is what turned the <code>@login_required</code> decorators and ownership
+    checks from boilerplate into something I could explain.
+  </p>
+</section>
+
+<section class="pf-section">
+  <h2><span class="pf-num">04</span>Video demonstration</h2>
+  <hr class="pf-rule">
+  <p>
+    A walkthrough of the running application &mdash; browsing and searching the catalog,
+    signing up, reviewing a movie, and completing a purchase end to end:
+  </p>
+  <!--
+    TO ADD THE VIDEO: delete the <div class="pf-video"> block below and uncomment
+    whichever embed matches where the video lives.
+
+    YouTube (use the /embed/ form, not /watch?v=):
+    <div class="pf-embed">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+              title="GT Movies Store demo" allowfullscreen></iframe>
+    </div>
+
+    Google Drive (Share -> Anyone with the link -> Viewer, then use /preview):
+    <div class="pf-embed">
+      <iframe src="https://drive.google.com/file/d/FILE_ID/preview"
+              title="GT Movies Store demo" allow="autoplay"></iframe>
+    </div>
+
+    A plain link works too, if embedding is a hassle:
+    <p><a href="VIDEO_URL">Watch the demo walkthrough</a></p>
+  -->
+  <div class="pf-video">
+    <strong>Demo video goes here</strong>
+    See the comment in <code>templates/portfolio.html</code> &mdash; drop in a YouTube
+    or Drive embed and this block goes away.
+  </div>
+</section>
+
+<p class="pf-meta">
+  Source code: <a href="https://github.com/kach0w/moviestore">github.com/kach0w/moviestore</a>
+  &middot; Built with Django, SQLite, and Bootstrap 5.
+</p>
+{% endblock %}
