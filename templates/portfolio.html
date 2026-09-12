@@ -157,15 +157,11 @@
 
   <h3>How it's put together</h3>
   <p>
-    Four Django apps: <code>home</code> for the landing and about pages,
-    <code>movies</code> for the catalog and reviews, <code>cart</code> for the cart and
-    checkout, and <code>accounts</code> for signup, login, and order history.
-  </p>
-  <p>
-    <code>Review</code> points at both a movie and a user, so the app knows whether a
-    review is yours before letting you edit it. Each <code>Item</code> saves the price it
-    was bought at, so changing a price later doesn't affect old orders. The cart lives in
-    the session instead of the database, so you can add movies before making an account.
+    Four Django apps: <code>home</code>, <code>movies</code>, <code>cart</code>, and
+    <code>accounts</code>. <code>Review</code> points at both a movie and a user so the
+    app knows whose it is, each <code>Item</code> saves the price it was bought at so old
+    orders don't change, and the cart lives in the session so you can add movies before
+    making an account.
   </p>
 
   <h3>Screens</h3>
@@ -254,9 +250,7 @@
   <h2><span class="pf-num">03</span>Process</h2>
   <hr class="pf-rule">
   <p>
-    I did one app at a time instead of building everything at once. For each user story I
-    added the model, the url, the view, and the template, then checked it in the browser
-    before moving on.
+    I really just followed the textbook, breaking up each "work sprint" into smaller tasks I thought were managable. I basically went chapter by chapter and decided how much I could do.
   </p>
   <p>
     The order was based on what needed what. <code>home</code> first to get a page
