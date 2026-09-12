@@ -1,9 +1,29 @@
-{% extends "base.html" %}
-
-{% block content %}
-<style>
-  /* This page is a report, so it needs more room than the 30rem site default. */
-  body { width: 46rem; max-width: 92%; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="/profile.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width: 46rem;
+            max-width: 92%;
+            padding: 0;
+            margin: 3rem auto;
+            color: #2D2926;
+            background-color: #fff;
+            font-family: "Ubuntu", serif;
+        }
+        a { text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { list-style-type: none; padding: 0; margin: 0; }
+        h1 { font-size: 2.3rem; color: #333; font-weight: 700; }
+        .pf-byline { color: #7e9968; font-weight: 500; margin-bottom: 0.25rem; }
 
   .pf-section { margin-bottom: 3rem; }
   .pf-section > h2 {
@@ -130,8 +150,13 @@
     .pf-stack-list li { flex-direction: column; gap: 0.1rem; }
     .pf-stack-list li span:first-child { flex: none; }
   }
-</style>
+    </style>
+</head>
+<body>
+<main>
 
+
+<div class="pf-byline">Karthik</div>
 <h1 style="font-size: 2rem; margin-bottom: 1.5rem;">GT Movies Store</h1>
 
 <section class="pf-section">
@@ -260,16 +285,9 @@
     before you can check who is allowed to edit it.
   </p>
   <p>
-    For questions I mostly used the Django docs, especially the pages on sessions and the
-    auth decorators. When there were a few ways to do something I went with whatever kept
-    logic out of the templates, which is why the cart total is a helper function and the
-    quantity lookup is a template filter. For bugs I read the traceback and used the admin
-    to see what was in the database.
-  </p>
-  <p>
-    Most of the bugs I hit were in the cases around a feature rather than the feature
-    itself, like empty reviews, refreshing the confirmation page, or trying to edit
-    someone else's review. The login and ownership checks came out of testing those.
+    For questions I mostly used the textbook. When a bug came up I would check to see
+    what it referred to, then go back into the textbook to see if I had missed a step. 
+    Then I would reimplement the feature and see if it worked.
   </p>
 </section>
 
@@ -310,4 +328,6 @@
   Code: <a href="https://github.com/kach0w/moviestore">github.com/kach0w/moviestore</a>.
   Built with Django, SQLite, and Bootstrap 5.
 </p>
-{% endblock %}
+</main>
+</body>
+</html>
