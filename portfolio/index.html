@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="/profile.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width: 46rem;
+            max-width: 92%;
+            padding: 0;
+            margin: 3rem auto;
+            color: #2D2926;
+            background-color: #fff;
+            font-family: "Ubuntu", serif;
+        }
+        a { text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { list-style-type: none; padding: 0; margin: 0; }
+        h1 { font-size: 2.3rem; color: #333; font-weight: 700; }
+        .pf-byline { color: #7e9968; font-size: 0.9rem; margin-bottom: 2rem; }
+
+        .pf-section { margin-bottom: 3rem; }
+        .pf-section > h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 1rem 0;
+        }
+        .pf-section > h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #333;
+            margin: 2rem 0 0.6rem 0;
+        }
+        .pf-section p { line-height: 1.55; margin: 0 0 1rem 0; }
+
+        .pf-table-wrap { overflow-x: auto; margin-bottom: 1rem; }
+        table.pf-table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 0.9rem;
+            min-width: 34rem;
+        }
+        table.pf-table th, table.pf-table td {
+            text-align: left;
+            vertical-align: top;
+            padding: 0.6rem 0.7rem;
+            border-bottom: 1px solid #ecebe7;
+            line-height: 1.45;
+        }
+        table.pf-table th {
+            font-weight: 700;
+            color: #333;
+            border-bottom: 2px solid #d8d5cf;
+            white-space: nowrap;
+        }
+        table.pf-table td code {
+            font-size: 0.8rem;
+            color: #6b7f58;
+            background: #f4f6f1;
+            padding: 0.1rem 0.3rem;
+            border-radius: 4px;
+        }
+
+        .pf-video {
+            border: 2px dashed #c9cfc0;
+            border-radius: 10px;
+            background: #f8faf6;
+            padding: 2.25rem 1.25rem;
+            text-align: center;
+            color: #6f7a63;
+        }
+        .pf-video strong { display: block; color: #55603f; margin-bottom: 0.3rem; }
+
+        /* Standalone so it still works once the .pf-video placeholder is deleted. */
+        .pf-embed { position: relative; padding-bottom: 56.25%; height: 0; }
+        .pf-embed iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            border: 0; border-radius: 8px;
+        }
+
+        .pf-meta {
+            font-size: 0.85rem;
+            color: #8a857d;
+            margin-top: 2.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e6e3de;
+        }
+
+        @media (max-width: 767px) {
+            body { width: 92%; }
+        }
+    </style>
+</head>
+<body>
+<main>
+
+
+
+<h1 style="font-size: 2rem; margin-bottom: 0.4rem; text-align: center;">GT Movies Store</h1>
+<div class="pf-byline" style="text-align: center;">Karthik Sabhanayakam</div>
+
+<section class="pf-section">
+  <h2>Introduction</h2>
+  <p>
+    I'm Karthik, a 2nd year computer science student at Georgia Tech.
+    I do robotics and machine learning research, right now on a multi-agent pedestrian
+    simulator at the Intelligent Vision and Automation Lab, and before that on marine
+    vehicle autonomy in ROS2. I mostly write Python and JavaScript, and picked up Django
+    for this project.
+  </p>
+</section>
+
+<section class="pf-section">
+  <h2>The app</h2>
+  <p>
+    GT Movies Store is a Django app for a movie storefront. Anyone can browse the
+    catalog, search it, and read reviews. Once you have an account you can write reviews,
+    add movies to a cart, and check out into an order history.
+  </p>
+
+  <h3>How it's put together</h3>
+  <p>
+    Four Django apps: <code>home</code>, <code>movies</code>, <code>cart</code>, and
+    <code>accounts</code>. <code>Review</code> points at both a movie and a user so the
+    app knows whose it is, each <code>Item</code> saves the price it was bought at so old
+    orders don't change, and the cart lives in the session so you can add movies before
+    making an account.
+  </p>
+
+  <h3>Screens</h3>
+  <p>
+    Each screen maps to one of the user stories for the project, like browsing movies,
+    leaving a review, or checking out:
+  </p>
+  <div class="pf-table-wrap">
+    <table class="pf-table">
+      <thead>
+        <tr>
+          <th>Screen</th>
+          <th>Route</th>
+          <th>What it does</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Home</td>
+          <td><code>/</code></td>
+          <td>Landing page with the store branding and a way into the catalog.</td>
+        </tr>
+        <tr>
+          <td>About</td>
+          <td><code>/about</code></td>
+          <td>Static page describing the store.</td>
+        </tr>
+        <tr>
+          <td>Movie list</td>
+          <td><code>/movies/</code></td>
+          <td>Lists every movie, and filters on a case insensitive name match when you search.</td>
+        </tr>
+        <tr>
+          <td>Movie detail</td>
+          <td><code>/movies/&lt;id&gt;/</code></td>
+          <td>Shows one movie's image, description, and price, along with its reviews and the add to cart form.</td>
+        </tr>
+        <tr>
+          <td>Sign up</td>
+          <td><code>/accounts/signup</code></td>
+          <td>Creates an account using Django's <code>UserCreationForm</code>, restyled to match the rest of the site.</td>
+        </tr>
+        <tr>
+          <td>Login and logout</td>
+          <td><code>/accounts/login/</code></td>
+          <td>Authenticates against Django's backend, with one generic error message when it fails.</td>
+        </tr>
+        <tr>
+          <td>Cart</td>
+          <td><code>/cart/</code></td>
+          <td>Lists what's in the session cart with a running total and a button to empty it.</td>
+        </tr>
+        <tr>
+          <td>Purchase confirmation</td>
+          <td><code>/cart/purchase/</code></td>
+          <td>Saves the order, clears the cart so a refresh can't order twice, and shows the order id.</td>
+        </tr>
+        <tr>
+          <td>Order history</td>
+          <td><code>/accounts/orders/</code></td>
+          <td>Lists the logged in user's past orders.</td>
+        </tr>
+        <tr>
+          <td>Reviews</td>
+          <td><code>/movies/&lt;id&gt;/review/...</code></td>
+          <td>Lets a logged in user post a review, and edit or delete their own.</td>
+        </tr>
+        <tr>
+          <td>Report review</td>
+          <td><code>/movies/&lt;id&gt;/review/&lt;id&gt;/report/</code></td>
+          <td>Lets a logged in user take down a review they think is inappropriate.</td>
+        </tr>
+        <tr>
+          <td>Admin</td>
+          <td><code>/admin/</code></td>
+          <td>Django admin for managing the catalog, including poster uploads.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    Every page extends one <code>base.html</code> with the navbar and footer in it. The
+    navbar changes depending on whether you're logged in, swapping Login and Sign Up for
+    Orders and a logout link with your username on it. Layout is Bootstrap 5 with a small
+    stylesheet on top.
+  </p>
+</section>
+
+<section class="pf-section">
+  <h2>Process</h2>
+  <p>
+    I really just followed the textbook, breaking up each "work sprint" into smaller tasks I thought were managable. I basically went chapter by chapter and decided how much I could do.
+  </p>
+  <p>
+    The order was based on what needed what. <code>home</code> first to get a page
+    rendering, then <code>movies</code> since everything else refers to a movie, then
+    <code>accounts</code> because reviews and orders need a user, and <code>cart</code>
+    last. Building accounts before reviews was useful because a review needs an author
+    before you can check who is allowed to edit it.
+  </p>
+  <p>
+    For questions I mostly used the textbook. When a bug came up I would check to see
+    what it referred to, then go back into the textbook to see if I had missed a step. 
+    Then I would reimplement the feature and see if it worked.
+  </p>
+</section>
+
+<section class="pf-section">
+  <h2>Video demonstration link</h2>
+ 
+    
+  <div class="pf-video">
+    <a href="https://drive.google.com/file/d/1v6hPMwuD1-VjYbjV3qSRveDPqi4pA2j6/view?usp=sharing">https://drive.google.com/file/d/1v6hPMwuD1-VjYbjV3qSRveDPqi4pA2j6/view?usp=sharing</a></p>
+  </div>
+</section>
+
+<p class="pf-meta">
+  Code: <a href="https://github.com/kach0w/moviestore">github.com/kach0w/moviestore</a>.
+  Built with Django, SQLite, and Bootstrap 5.
+</p>
+</main>
+</body>
+</html>
